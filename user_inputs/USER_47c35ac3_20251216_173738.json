@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_47c35ac3",
+    "timestamp": "20251216_173738",
+    "form_data": {
+        "Idea Name": "AI-Powered Financial Fraud Detection and Risk Assessment System",
+        "Domain": "public_services",
+        "fundingSource": "govt",
+        "Expected benefits": "Early fraud detection.\r\nReduced financial losses.\r\nImproved financial system security.",
+        "Idea Description": "The project aims to build an AI-based fraud detection system that analyzes transaction patterns, user behavior, and historical fraud cases to detect suspicious activities in real time. The system supports government financial institutions in preventing financial losses and improving trust.",
+        "potentail Challenges": "Highly imbalanced datasets.\r\nEvolving fraud patterns.\r\nLow tolerance for false positives."
+    },
+    "similarity_text": "domain_public_services ai_ml governance detection analysis project aim build based fraud_detection system analyzes transaction pattern user behavior historical fraud case detect suspicious activity real time system support government financial institution preventing financial loss improving trust highly imbalanced datasets. evolving fraud patterns. low tolerance false positives.",
+    "processed_at": "2025-12-16T17:37:41.799627"
+}

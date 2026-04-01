@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_f180df99",
+    "created_at": "20251201_174700",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_tax_revenue ai_ml tax_revenue using identify fraudulent tax claim",
+    "similarity_text_length": 72,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

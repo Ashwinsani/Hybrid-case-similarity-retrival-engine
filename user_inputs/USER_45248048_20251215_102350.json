@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_45248048",
+    "timestamp": "20251215_102350",
+    "form_data": {
+        "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+        "Domain": "healthcare",
+        "fundingSource": "govt",
+        "Expected benefits": "Early detection of disease outbreaks\r\n\r\nFaster public health interventions\r\n\r\nReduced mortality and spread of infectious diseases\r\n\r\nData-driven allocation of medical resources",
+        "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response.",
+        "potentail Challenges": "Integrating sensitive health data across multiple hospitals and labs\r\n\r\nEnsuring compliance with data protection laws (DPDP Act)\r\n\r\nHandling incomplete or noisy health record data\r\n\r\nMaintaining real-time performance during health emergencies"
+    },
+    "similarity_text": "domain_healthcare ai_ml healthcare environment detection prediction monitoring project focus developing based early disease outbreak detection platform using real time health record hospital admission log environmental_data population mobility pattern system identifies unusual spike symptom predicts potential outbreak zone alert healthcare authority integrates data hospital wearable device pathology lab public health surveillance system model detect anomaly geospatial analytics create hotspot map rapid response integrating sensitive health data across multiple hospitals labs ensuring compliance data protection laws dpdp act handling incomplete noisy health record data maintaining real time performance health emergencies",
+    "processed_at": "2025-12-15T10:23:53.665947"
+}

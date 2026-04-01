@@ -1,0 +1,67 @@
+{
+  "semantic": {
+    "min_technical_density_boost": 0.15,
+    "min_technical_density": 0.2,
+    "description_complexity_boost": 0.12,
+    "min_description_complexity": 50,
+    "long_text_boost": 0.1,
+    "min_text_length_long": 80
+  },
+  "lexical": {
+    "concrete_examples_boost": 0.08,
+    "short_text_boost": 0.05,
+    "short_text_threshold": 100,
+    "technical_penalty": -0.1,
+    "technical_penalty_threshold": 0.15
+  },
+  "cross_encoder": {
+    "high_complexity_boost": 0.25,
+    "min_high_complexity": 50,
+    "abstract_concepts_boost": 0.12,
+    "technical_boost": 0.1,
+    "technical_threshold": 0.1
+  },
+  "bm25": {
+    "short_text_boost": 0.15,
+    "short_text_threshold": 30,
+    "vocabulary_specificity_boost": 0.15,
+    "vocabulary_specificity_threshold": 0.7,
+    "technical_boost": 0.1,
+    "technical_threshold": 0.15
+  },
+  "reranking": {
+    "semantic_threshold": 0.6,
+    "lexical_threshold": 0.3,
+    "bm25_threshold": 0.5,
+    "boost_multiplier": 1.2,
+    "boost_max_cap": 1.0,
+    "use_additive_boost": false,
+    "additive_boost_amount": 0.15,
+    "verbose": true,
+    "log_rephrased_detections": true
+  },
+  "adaptive_threshold": {
+    "base_threshold": 0.3,
+    "high_semantic_cutoff": 0.7,
+    "threshold_reduction_factor": 0.8,
+    "min_threshold": 0.2
+  },
+  "dynamic_weighting": {
+    "semantic_boost_cutoff": 0.6,
+    "semantic_boost_multiplier": 1.2,
+    "min_weight": 0.05,
+    "max_weight": 0.5,
+    "use_softmax_smoothing": true,
+    "temperature": 1.0
+  },
+  "validation": {
+    "run_validation_on_startup": false,
+    "validation_data_path": "validation_data.json",
+    "min_rank_for_original": 5,
+    "min_score_for_original": 0.6,
+    "log_validation_results": true
+  },
+  "enable_reranking": true,
+  "enable_adaptive_threshold": true,
+  "enable_dynamic_weighting": true
+}

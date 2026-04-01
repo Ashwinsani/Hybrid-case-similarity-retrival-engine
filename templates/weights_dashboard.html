@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Per-Case Optimization Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+  <style>
+    .weight-card { border-left:4px solid #007bff; transition:all .3s ease; }
+    .method-badge { font-size:.8em; padding:3px 8px; }
+    .progress-thin { height:6px; }
+    .stat-card { background:#f8f9fa; border-radius:.5rem; padding:1rem; margin-bottom:1rem; }
+    .per-case-badge { background:#6f42c1 !important; font-size:.8em; color:#fff; padding:.25rem .5rem; border-radius:.25rem; }
+    .threshold-badge { background:#20c997 !important; color:#fff; font-size:0.75em; padding:0.25rem 0.5rem; }
+    .sensitivity-bar { height: 8px; }
+    .real-data-badge { background:#198754 !important; }
+    .estimated-data-badge { background:#6c757d !important; }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/">Idea Similarity Finder</a>
+    <div class="navbar-nav ms-auto d-flex align-items-center">
+      <a href="/" class="nav-link">New Search</a>
+      {% if dashboard_data and dashboard_data.recent_case and dashboard_data.recent_case.user_id %}
+      <a href="/results/{{ dashboard_data.recent_case.user_id }}" class="nav-link">Back to Results</a>
+      {% endif %}
+      <a href="/weights_dashboard" class="nav-link active">Per-Case Dashboard</a>
+      <span class="per-case-badge ms-2">True Per-Case</span>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <h2 class="mb-4">Per-Case Optimization Dashboard</h2>
+
+  <!-- System status -->
+  <div class="card mb-4">
+    <div class="card-header bg-success text-white"><h4 class="mb-0">System Status</h4></div>
+    <div class="card-body">
+      <div class="row text-center">
+        <div class="col-md-3"><h5>Corpus Cases</h5><h3 class="text-primary">{{ dashboard_data.get('total_corpus_cases', 0) if dashboard_data else 0 }}</h3></div>
+        <div class="col-md-3"><h5>Optimization Mode</h5><h3 class="text-info">PER-CASE</h3></div>
+        <div class="col-md-3"><h5>Similarity Methods</h5><h3 class="text-warning">4</h3></div>
+        <div class="col-md-3"><h5>Last Analysis</h5><h6 class="text-muted" id="lastAnalysis">{{ (dashboard_data.get('last_case_analyzed') if dashboard_data else 'Never') or 'Never' }}</h6></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      {% if dashboard_data and dashboard_data.get('recent_weights') %}
+      <div class="card mb-4">
+        <div class="card-header"><h4 class="mb-0">Recent Case Weights</h4></div>
+        <div class="card-body"><canvas id="weightsChart" width="600" height="300"></canvas></div>
+      </div>
+      {% endif %}
+
+      <!-- Threshold Sensitivity Analysis Card -->
+      <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h4 class="mb-0">Threshold Sensitivity Analysis</h4>
+          <div>
+            {% if dashboard_data and dashboard_data.threshold_sensitivity and dashboard_data.threshold_sensitivity|length > 0 %}
+              {% if dashboard_data.threshold_sensitivity[0].is_real_data %}
+                <span class="badge real-data-badge">Real Data</span>
+              {% else %}
+                <span class="badge estimated-data-badge">Estimated Data</span>
+              {% endif %}
+            {% endif %}
+            <span class="badge threshold-badge ms-1">Real-time Analysis</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="text-muted mb-3">Shows how different similarity thresholds affect match count for the most recent case. Based on actual final similarity scores.</p>
+          
+          <div class="table-responsive">
+            <table class="table table-sm table-hover">
+              <thead>
+                <tr>
+                  <th>Threshold</th>
+                  <th>Matches Found</th>
+                  <th>Drop %</th>
+                  <th>Stability</th>
+                </tr>
+              </thead>
+              <tbody id="thresholdSensitivityTable">
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="mt-3">
+            <div class="d-flex justify-content-between mb-2">
+              <small class="text-muted">Match Count by Threshold</small>
+              <small id="sensitivitySummary" class="text-muted">Loading...</small>
+            </div>
+            <div class="progress" style="height: 20px;">
+              <div id="thresholdProgressBar" class="progress-bar" role="progressbar" style="width: 0%"></div>
+            </div>
+            <div class="d-flex justify-content-between mt-1">
+              <small>0.2 (More matches)</small>
+              <small>0.6 (Fewer matches)</small>
+            </div>
+          </div>
+          
+          <div class="alert alert-light mt-3">
+            <small class="d-block"><strong>💡 Interpretation:</strong> 
+              Lower thresholds (0.2-0.3) show broader matches, while higher thresholds (0.5-0.6) show only highly similar cases.
+              {% if dashboard_data.recent_case %}
+                <br>For "<strong>{{ dashboard_data.recent_case.idea_name }}</strong>", threshold 
+                <strong>{{ dashboard_data.recent_case.current_threshold }}</strong> found 
+                <strong>{{ dashboard_data.recent_case.matches_found }}</strong> matches.
+              {% endif %}
+            </small>
+            <small class="d-block mt-1"><strong>🎯 Recommended:</strong> Threshold 0.2-0.4 typically balances precision and recall for most cases.</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weight Distribution Explanation -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h5 class="mb-0">Corpus-Aware Weight Optimization</h5>
+        </div>
+        <div class="card-body">
+          <p class="text-muted mb-3"><small>Weights are dynamically computed by evaluating each method on corpus samples</small></p>
+          
+          <div class="mb-3">
+            <h6 class="mb-3">The 4 Similarity Methods</h6>
+            
+            <div class="mb-3">
+              <div class="method-badge bg-primary text-white d-inline-block mb-2">Semantic</div>
+              <small class="d-block">Embedding-based cosine similarity using sentence embeddings (384-dim)</small>
+            </div>
+            
+            <div class="mb-3">
+              <div class="method-badge bg-success text-white d-inline-block mb-2">Field Score</div>
+              <small class="d-block">Weighted per-field TF-IDF scoring — matches in Idea Name count more than Description or Domain</small>
+            </div>
+            
+            <div class="mb-3">
+              <div class="method-badge bg-info text-white d-inline-block mb-2">BM25</div>
+              <small class="d-block">Probabilistic relevance framework, balances term frequency and document length</small>
+            </div>
+            
+            <div class="mb-3">
+              <div class="method-badge bg-warning text-dark d-inline-block mb-2">N-Gram (Bigram)</div>
+              <small class="d-block">Sequence-based phrase overlap using 2-grams, captures phrase-level similarity</small>
+            </div>
+          </div>
+          
+          <hr>
+          
+          <h6 class="mb-3">Weight Computation Process</h6>
+          <ol class="small">
+            <li><strong>Feature Extraction:</strong> Query is analyzed for length, specificity, technical terms</li>
+            <li><strong>Corpus Sampling:</strong> ~30-40% of corpus is sampled deterministically</li>
+            <li><strong>Method Evaluation:</strong> Each method scores all samples</li>
+            <li><strong>Effectiveness Scoring:</strong> Methods scored on discrimination power & consistency</li>
+            <li><strong>Weight Conversion:</strong> Effectiveness scores → normalized weights (sum=1.0)</li>
+          </ol>
+          
+          <div class="alert alert-info mt-3 mb-0">
+            <small><strong>Key Insight:</strong> Different queries get different weights based on actual method effectiveness. Short queries boost semantic/BM25/N-gram, long queries boost field score/semantic.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      {% if dashboard_data and dashboard_data.get('recent_case') %}
+      <div class="card mb-4">
+        <div class="card-header"><h4 class="mb-0">Most Recent Case</h4></div>
+        <div class="card-body">
+          <p><strong>Idea:</strong> {{ dashboard_data.recent_case.get('idea_name', 'Unknown') }}</p>
+          <p><strong>Domain:</strong> <span class="badge bg-primary">{{ dashboard_data.recent_case.get('domain','Unknown') }}</span></p>
+          <p><strong>Matches Found:</strong> {{ dashboard_data.recent_case.get('matches_found', 0) }}</p>
+          <p><strong>Top Score:</strong> {{ '%.3f'|format(dashboard_data.recent_case.get('top_score',0)) }}</p>
+          <p><strong>User ID:</strong> {{ dashboard_data.recent_case.get('user_id','Unknown') }}</p>
+          
+          <!-- Current Threshold Display - Use ACTUAL threshold -->
+          <div class="mt-3 pt-3 border-top">
+            <p>
+              <strong>Threshold Used:</strong> 
+              <span class="badge 
+                {% if dashboard_data.recent_case.current_threshold <= 0.25 %}bg-info
+                {% elif dashboard_data.recent_case.current_threshold <= 0.4 %}bg-success
+                {% else %}bg-warning{% endif %}">
+                {{ dashboard_data.recent_case.get('current_threshold', 0.4) }}
+              </span>
+            </p>
+            <small class="text-muted">
+              {% if dashboard_data.recent_case.current_threshold <= 0.25 %}
+                Broad search (more matches, lower precision)
+              {% elif dashboard_data.recent_case.current_threshold <= 0.4 %}
+                Balanced search
+              {% else %}
+                Strict search (fewer matches, higher precision)
+              {% endif %}
+            </small>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+      <div class="card mb-4">
+        <div class="card-header"><h4 class="mb-0">Weight Constraints</h4></div>
+        <div class="card-body">
+          <div class="stat-card">
+            <div class="d-flex justify-content-between small mb-1"><span>Minimum Weight</span><span>0.05</span></div>
+            <div class="d-flex justify-content-between small mb-1"><span>Maximum Weight</span><span>0.50</span></div>
+            <div class="d-flex justify-content-between small mb-1"><span>Normalized Sum</span><span>1.00</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h4 class="mb-0">Actions</h4></div>
+        <div class="card-body">
+          <button class="btn btn-primary w-100 mb-2" onclick="refreshDashboard()">🔄 Refresh Dashboard</button>
+          <button class="btn btn-secondary w-100 mb-2" onclick="viewSystemStats()">📊 View System Stats</button>
+          <a href="/" class="btn btn-success w-100 mb-2">➕ Submit New Case</a>
+          <button class="btn btn-outline-dark w-100" onclick="exportDashboardData()">📥 Export Data</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- SAFE PAGE DATA JSON -->
+<script id="dashboardDataJson" type="application/json">
+{
+  "dashboard_data": {{ dashboard_data | default({}) | tojson }},
+  "recent_weights": {{ (dashboard_data.get('recent_weights') if dashboard_data else {}) | default({}) | tojson }},
+  "recent_case": {{ (dashboard_data.get('recent_case') if dashboard_data else {}) | default({}) | tojson }},
+  "threshold_sensitivity": {{ (dashboard_data.get('threshold_sensitivity') if dashboard_data else []) | default([]) | tojson }}
+}
+</script>
+
+<script>
+(function(){
+  let dashboardData = {};
+  let recentWeights = {};
+  let recentCase = {};
+  let thresholdSensitivity = [];
+  
+  try {
+    const el = document.getElementById('dashboardDataJson');
+    const parsed = el ? JSON.parse(el.textContent) : {};
+    dashboardData = parsed.dashboard_data || {};
+    recentWeights = parsed.recent_weights || {};
+    recentCase = parsed.recent_case || {};
+    thresholdSensitivity = parsed.threshold_sensitivity || [];
+  } catch(e) {
+    console.error('Failed to parse dashboard JSON', e);
+  }
+
+  // chart init
+  function initWeightsChart(weightsData) {
+    const ctx = document.getElementById('weightsChart');
+    if (!ctx) return;
+    const labels = Object.keys(weightsData).map(k => k.replace(/_/g,' ').replace(/\b\w/g, l => l.toUpperCase()));
+    const values = Object.values(weightsData);
+    const colors = ['rgba(255,99,132,0.8)','rgba(54,162,235,0.8)','rgba(255,206,86,0.8)','rgba(75,192,192,0.8)','rgba(153,102,255,0.8)','rgba(255,159,64,0.8)'];
+    new Chart(ctx.getContext('2d'), {
+      type: 'bar',
+      data: { labels: labels, datasets: [{ label: 'Weight Distribution', data: values, backgroundColor: labels.map((_,i)=>colors[i%colors.length]) }]},
+      options: { scales: { y: { beginAtZero:true, max:1.0 } }, responsive:true, maintainAspectRatio:false }
+    });
+  }
+
+  // Generate threshold sensitivity analysis - USING REAL DATA from backend
+  function generateThresholdSensitivity() {
+    const tableBody = document.getElementById('thresholdSensitivityTable');
+    const progressBar = document.getElementById('thresholdProgressBar');
+    const summaryElement = document.getElementById('sensitivitySummary');
+    
+    if (!tableBody) {
+      return;
+    }
+    
+    // If we have real threshold sensitivity data from backend, use it
+    if (thresholdSensitivity && thresholdSensitivity.length > 0) {
+      // Clear table
+      tableBody.innerHTML = '';
+      
+      // Populate table with REAL data
+      thresholdSensitivity.forEach((data, index) => {
+        const row = document.createElement('tr');
+        
+        // Determine styling
+        let rowClass = '';
+        let badgeClass = '';
+        let badgeText = data.stability;
+        
+        if (data.stability === 'Stable') {
+          badgeClass = 'bg-success';
+        } else if (data.stability === 'Moderate') {
+          badgeClass = 'bg-warning text-dark';
+        } else if (data.stability === 'Unstable') {
+          badgeClass = 'bg-danger';
+        } else {
+          badgeClass = 'bg-secondary';
+        }
+
+        if (data.is_current) {
+          rowClass = 'table-active fw-bold';
+        }
+        
+        row.className = rowClass;
+        row.innerHTML = `
+          <td>
+            <strong>${data.threshold.toFixed(2)}</strong>
+            ${data.is_current ? '<span class="badge bg-dark ms-1">USED</span>' : ''}
+            ${data.is_recommended ? '<span class="badge bg-info ms-1 text-dark">RECOMMENDED</span>' : ''}
+          </td>
+          <td>
+            <span class="badge 
+              ${data.is_current ? 'bg-success' : 
+                data.matches >= 15 ? 'bg-primary' : 
+                data.matches >= 8 ? 'bg-info' : 
+                data.matches >= 3 ? 'bg-warning text-dark' : 'bg-secondary'}">
+              ${data.matches} match${data.matches !== 1 ? 'es' : ''}
+            </span>
+          </td>
+          <td><strong>${(data.drop_pct || 0).toFixed(1)}%</strong></td>
+          <td><span class="badge ${badgeClass}">${badgeText}</span></td>
+        `;
+        tableBody.appendChild(row);
+      });
+      
+      // Update progress bar
+      const maxMatches = Math.max(...thresholdSensitivity.map(d => d.matches), 1);
+      const actualMatches = recentCase.matches_found || 0;
+      const actualThreshold = recentCase.current_threshold || 0.4;
+      const progressPercentage = (actualMatches / maxMatches) * 100;
+      
+      if (progressBar) {
+        progressBar.style.width = `${Math.min(progressPercentage, 100)}%`;
+        progressBar.textContent = `${actualMatches} matches at ${actualThreshold}`;
+        
+        // Color based on threshold value
+        if (actualThreshold <= 0.25) {
+          progressBar.className = 'progress-bar bg-info';
+        } else if (actualThreshold <= 0.4) {
+          progressBar.className = 'progress-bar bg-success';
+        } else {
+          progressBar.className = 'progress-bar bg-warning';
+        }
+      }
+      
+      // Update summary
+      if (summaryElement) {
+        const lowMatches = thresholdSensitivity.find(d => Math.abs(d.threshold - 0.2) < 0.01)?.matches || 0;
+        const highMatches = thresholdSensitivity.find(d => Math.abs(d.threshold - 0.6) < 0.01)?.matches || 0;
+        
+        let thresholdNote = '';
+        if (actualThreshold <= 0.25) {
+          thresholdNote = ' (Broad search)';
+        } else if (actualThreshold >= 0.5) {
+          thresholdNote = ' (Strict search)';
+        }
+        
+        const isRealData = thresholdSensitivity[0]?.is_real_data || false;
+        const dataSource = isRealData ? 'Real data' : 'Estimated';
+        
+        summaryElement.textContent = 
+          `${dataSource}: ${actualMatches} matches at threshold ${actualThreshold}${thresholdNote} | Range: ${lowMatches}-${highMatches} matches`;
+      }
+      
+    } else if (recentCase.idea_name) {
+      // Fallback: estimation if no real data available
+      const baseMatches = recentCase.matches_found || 5;
+      const actualThreshold = recentCase.current_threshold || 0.4;
+      const thresholds = [0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6];
+      
+      const sensitivityData = thresholds.map(threshold => {
+        let matches;
+        let sensitivityLevel;
+        let analysis;
+        
+        if (Math.abs(threshold - actualThreshold) < 0.01) {
+          matches = baseMatches;
+          sensitivityLevel = "current";
+          analysis = `Actual search results: ${matches} matches`;
+        } else if (threshold < actualThreshold) {
+          const ratioDiff = (actualThreshold - threshold) / actualThreshold;
+          const increaseFactor = 1 + (ratioDiff * 3);
+          matches = Math.min(Math.round(baseMatches * increaseFactor), 50);
+          sensitivityLevel = "high";
+          analysis = `Estimated: threshold ${threshold.toFixed(2)} < ${actualThreshold}`;
+        } else {
+          const ratioDiff = (threshold - actualThreshold) / (1 - actualThreshold);
+          const decreaseFactor = Math.max(0.1, 1 - ratioDiff);
+          matches = Math.max(Math.round(baseMatches * decreaseFactor), 0);
+          
+          if (threshold >= 0.5) {
+            sensitivityLevel = "low";
+            analysis = "Strict match criteria";
+          } else {
+            sensitivityLevel = "medium";
+            analysis = "Moderate sensitivity";
+          }
+        }
+        
+        matches = Math.min(matches, 100);
+        matches = Math.max(matches, 0);
+        
+        return { 
+          threshold, 
+          matches, 
+          sensitivityLevel, 
+          analysis,
+          isActual: Math.abs(threshold - actualThreshold) < 0.01
+        };
+      });
+      
+      // Populate table
+      tableBody.innerHTML = '';
+      sensitivityData.forEach((data, index) => {
+        const row = document.createElement('tr');
+        
+        // Mock stability since we only have fake matches
+        let prevMatches = index === 0 ? data.matches : sensitivityData[index-1].matches;
+        let dropPct = prevMatches === 0 ? 0 : ((prevMatches - data.matches) / prevMatches) * 100;
+        let stability = "Stable";
+        let badgeClass = "bg-success";
+        
+        if (dropPct > 25.0) {
+            stability = "Unstable";
+            badgeClass = "bg-danger";
+        } else if (dropPct > 10.0) {
+            stability = "Moderate";
+            badgeClass = "bg-warning text-dark";
+        }
+        
+        if (data.isActual) {
+          row.className = 'table-active fw-bold';
+        }
+        
+        row.innerHTML = `
+          <td>
+            <strong>${data.threshold.toFixed(2)}</strong>
+            ${data.isActual ? '<span class="badge bg-dark ms-1">USED</span>' : ''}
+          </td>
+          <td>
+            <span class="badge 
+              ${data.isActual ? 'bg-success' : 
+                data.matches >= 15 ? 'bg-primary' : 
+                data.matches >= 8 ? 'bg-info' : 
+                data.matches >= 3 ? 'bg-warning text-dark' : 'bg-secondary'}">
+              ${data.matches} match${data.matches !== 1 ? 'es' : ''}
+            </span>
+          </td>
+          <td><strong>${dropPct.toFixed(1)}%</strong></td>
+          <td><span class="badge ${badgeClass}">${stability}</span></td>
+        `;
+        tableBody.appendChild(row);
+      });
+      
+      // Update progress bar
+      const maxMatches = Math.max(...sensitivityData.map(d => d.matches), 1);
+      const actualMatches = baseMatches;
+      const progressPercentage = (actualMatches / maxMatches) * 100;
+      
+      if (progressBar) {
+        progressBar.style.width = `${Math.min(progressPercentage, 100)}%`;
+        progressBar.textContent = `${actualMatches} matches at ${actualThreshold}`;
+        
+        if (actualThreshold <= 0.25) {
+          progressBar.className = 'progress-bar bg-info';
+        } else if (actualThreshold <= 0.4) {
+          progressBar.className = 'progress-bar bg-success';
+        } else {
+          progressBar.className = 'progress-bar bg-warning';
+        }
+      }
+      
+      // Update summary
+      if (summaryElement) {
+        const lowMatches = sensitivityData.find(d => d.threshold === 0.2)?.matches || 0;
+        const highMatches = sensitivityData.find(d => d.threshold === 0.6)?.matches || 0;
+        
+        let thresholdNote = '';
+        if (actualThreshold <= 0.25) {
+          thresholdNote = ' (Broad search)';
+        } else if (actualThreshold >= 0.5) {
+          thresholdNote = ' (Strict search)';
+        }
+        
+        summaryElement.textContent = 
+          `Estimated: ${actualMatches} matches at threshold ${actualThreshold}${thresholdNote} | Range: ${lowMatches}-${highMatches} matches`;
+      }
+    } else {
+      tableBody.innerHTML = `<tr><td colspan="4" class="text-center text-muted">Submit a case first to see threshold sensitivity analysis</td></tr>`;
+      if (summaryElement) {
+        summaryElement.textContent = 'No data available';
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    // Initialize weights chart if data exists
+    if (recentWeights && Object.keys(recentWeights).length) {
+      initWeightsChart(recentWeights);
+    }
+    
+    // Generate threshold sensitivity analysis
+    generateThresholdSensitivity();
+    
+    // Update "Last Analysis" time if it's "Never"
+    const lastEl = document.getElementById('lastAnalysis');
+    if (lastEl && lastEl.textContent.trim() === 'Never') {
+      const now = new Date(); 
+      lastEl.textContent = now.toLocaleDateString() + ' ' + now.toLocaleTimeString();
+    }
+    
+    // Add threshold information to page title if actual threshold is unusual
+    if (recentCase.current_threshold) {
+      const actualThreshold = recentCase.current_threshold;
+      if (actualThreshold <= 0.25 || actualThreshold >= 0.5) {
+        const thresholdType = actualThreshold <= 0.25 ? 'Broad' : 'Strict';
+        document.title = `Per-Case Dashboard (${thresholdType} Search: ${actualThreshold})`;
+      }
+    }
+  });
+
+  window.refreshDashboard = function(){ 
+    // Add a small delay to show refresh animation
+    const refreshBtn = document.querySelector('button[onclick="refreshDashboard()"]');
+    if (refreshBtn) {
+      const originalText = refreshBtn.innerHTML;
+      refreshBtn.innerHTML = '🔄 Refreshing...';
+      refreshBtn.disabled = true;
+      setTimeout(() => {
+        refreshBtn.innerHTML = originalText;
+        refreshBtn.disabled = false;
+        location.reload();
+      }, 800);
+    } else {
+      location.reload();
+    }
+  };
+  
+  window.viewSystemStats = function() {
+    fetch('/api/system_stats')
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === 'success') {
+          const stats = data.system_statistics;
+          const message = `📊 SYSTEM STATISTICS\n` +
+                         `────────────────────\n` +
+                         `Optimization Mode: ${stats.optimization_mode}\n` +
+                         `Corpus Cases: ${stats.total_corpus_cases}\n` +
+                         `User Cases Processed: ${stats.user_cases_processed}\n` +
+                         `Similarity Methods: ${stats.similarity_methods.length}\n` +
+                         `Weight Constraints:\n` +
+                         `  Min: ${stats.weight_constraints.minimum_weight}\n` +
+                         `  Max: ${stats.weight_constraints.maximum_weight}\n` +
+                         `System Status: ${stats.system_status}\n` +
+                         `────────────────────\n` +
+                         `Last Updated: ${new Date(stats.last_updated).toLocaleString()}`;
+          alert(message);
+        }
+      })
+      .catch(err => {
+        console.error('Error loading system stats:', err);
+        alert('Error loading system statistics. Check console for details.');
+      });
+  };
+  
+  window.exportDashboardData = function(){
+    // Collect threshold sensitivity data
+    const thresholdData = [];
+    const rows = document.querySelectorAll('#thresholdSensitivityTable tr');
+    rows.forEach(row => {
+      const cells = row.querySelectorAll('td');
+      if (cells.length >= 4) {
+        thresholdData.push({
+          threshold: cells[0].textContent.trim(),
+          matches: cells[1].textContent.trim(),
+          drop_pct: cells[2].textContent.trim(),
+          stability: cells[3].textContent.trim()
+        });
+      }
+    });
+    
+    // Prepare export data
+    const exportData = {
+      dashboard_data: dashboardData,
+      recent_case: recentCase,
+      recent_weights: recentWeights,
+      threshold_sensitivity_data: thresholdSensitivity,
+      threshold_sensitivity_display: thresholdData,
+      exported_at: new Date().toISOString(),
+      export_timestamp: Date.now(),
+      page_url: window.location.href,
+      user_agent: navigator.userAgent
+    };
+    
+    // Create and trigger download
+    const exportBlob = new Blob([JSON.stringify(exportData, null, 2)], {type: 'application/json'});
+    const url = URL.createObjectURL(exportBlob); 
+    const a = document.createElement('a'); 
+    a.href = url; 
+    a.download = `dashboard_export_${new Date().toISOString().slice(0, 10)}.json`; 
+    document.body.appendChild(a); 
+    a.click(); 
+    a.remove(); 
+    URL.revokeObjectURL(url);
+    
+    // Show confirmation
+    const exportBtn = document.querySelector('button[onclick="exportDashboardData()"]');
+    if (exportBtn) {
+      const originalText = exportBtn.innerHTML;
+      exportBtn.innerHTML = '✅ Exported!';
+      setTimeout(() => {
+        exportBtn.innerHTML = originalText;
+      }, 2000);
+    }
+  };
+})();
+</script>
+</body>
+</html>

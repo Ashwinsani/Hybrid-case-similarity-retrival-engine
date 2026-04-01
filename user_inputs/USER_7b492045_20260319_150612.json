@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_7b492045",
+    "timestamp": "20260319_150612",
+    "form_data": {
+        "Idea Name": "Intelligent GO Search",
+        "Domain": "public_services",
+        "fundingSource": "govt",
+        "Expected benefits": "NA",
+        "Idea Description": "The Intelligent GO Search is an AI-powered portal that enables users\r\nto find Government Orders quickly and accurately using natural\r\nlanguage queries. Instead of browsing through files, officers can type a\r\nquestion or keyword in plain language e.g., Show GOs related to\r\nbudget allocation for 2023–24 and instantly retrieve the most\r\nrelevant documents",
+        "potential Challenges": "OCR conversion of old files."
+    },
+    "similarity_text": "domain_public_services ai_ml governance detection intelligent search powered portal enables user find government_orders quickly accurately using natural language query instead browsing file officer type question keyword plain language e.g. show go related budget allocation instantly retrieve relevant document ocr conversion old files.",
+    "processed_at": "2026-03-19T15:06:12.190825"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "feedback_id": "cb5a5e21",
+    "user_id": "USER_2e63fbba",
+    "candidate_id": "I#20250004",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-08T16:51:16.775138",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "d578d2c8",
+    "user_id": "USER_2e63fbba",
+    "candidate_id": "I#20250030",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-08T16:51:18.766975",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "c1d286f2",
+    "user_id": "USER_2e63fbba",
+    "candidate_id": "I#20250052",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-08T16:51:20.548604",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  }
+]

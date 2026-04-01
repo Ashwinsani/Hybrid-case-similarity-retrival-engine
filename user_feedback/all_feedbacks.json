@@ -1,0 +1,718 @@
+[
+  {
+    "feedback_id": "a4fb11d2",
+    "user_id": "USER_ccf48dcc",
+    "candidate_id": "I#20250002",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "SmartGoods Anomaly Intelligence System (SG-AIS)",
+      "Domain": "public_services",
+      "Idea Description": "This system analyzes the movement of goods across states, sectors, and taxpayers using multiple datasets including e-way bills, GPS data, and GST filings (GSTR-1). The system focuses on identifying unusual or suspicious activities by: Monitoring route patterns and flagging route deviations or unexpected stops. Detecting anomalies such as ghost shipments, duplicate trips, repeated invoice use, and invoice-movement mismatches. Integrating GPS traces and e-way bill records to compute route compliance scores using ML models. Cross-verifying movement data with GSTR-1 declarations to detect discrepancies in invoices vs. actual movement. Providing dashboards with alerts, visual heatmaps, trip histories, and anomaly explanations."
+    },
+    "timestamp": "2025-12-03T17:41:46.872079",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "64b5a5a3",
+    "user_id": "USER_b684a473",
+    "candidate_id": "I#20250004",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-03T17:44:32.719950",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "116f19b5",
+    "user_id": "USER_b684a473",
+    "candidate_id": "I#20250052",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-03T17:44:39.059407",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "b15cddbc",
+    "user_id": "USER_25887f5a",
+    "candidate_id": "I#20250021",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Smart Agriculture Forecasting System",
+      "Domain": "environment",
+      "Idea Description": "This project focuses on developing an AI-powered prediction system that analyzes environmental data, soil parameters, and market trends to forecast crop yields, pest risks, and weather impacts. The system integrates data from IoT sensors, satellite imagery, and historical yield records to help farmers and policymakers make data-driven agricultural decisions."
+    },
+    "timestamp": "2025-12-03T17:46:59.590530",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "1e6ee08a",
+    "user_id": "USER_25887f5a",
+    "candidate_id": "I#20250024",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Smart Agriculture Forecasting System",
+      "Domain": "environment",
+      "Idea Description": "This project focuses on developing an AI-powered prediction system that analyzes environmental data, soil parameters, and market trends to forecast crop yields, pest risks, and weather impacts. The system integrates data from IoT sensors, satellite imagery, and historical yield records to help farmers and policymakers make data-driven agricultural decisions."
+    },
+    "timestamp": "2025-12-03T17:47:05.566158",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "0f4d2db9",
+    "user_id": "USER_80de4d68",
+    "candidate_id": "I#20250011",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness."
+    },
+    "timestamp": "2025-12-03T17:49:27.804068",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "55b27f50",
+    "user_id": "USER_80de4d68",
+    "candidate_id": "I#20250009",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness."
+    },
+    "timestamp": "2025-12-03T17:49:29.102526",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "9b1305e8",
+    "user_id": "USER_80de4d68",
+    "candidate_id": "I#20250015",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness."
+    },
+    "timestamp": "2025-12-03T17:49:31.650880",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "92297651",
+    "user_id": "USER_4c65faa9",
+    "candidate_id": "I#20250004",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-03T17:59:51.618401",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "5fac7819",
+    "user_id": "USER_4c65faa9",
+    "candidate_id": "I#20250052",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-03T17:59:52.940492",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "9ae55de9",
+    "user_id": "USER_8e9c5985",
+    "candidate_id": "I#20250004",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-03T18:18:35.307084",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "df021336",
+    "user_id": "USER_8e9c5985",
+    "candidate_id": "I#20250052",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-03T18:18:37.829633",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "58f4c962",
+    "user_id": "USER_f4da49c4",
+    "candidate_id": "I#20250004",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-05T09:48:34.582891",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "7633393c",
+    "user_id": "USER_ed167ddf",
+    "candidate_id": "I#20250004",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-08T14:45:54.370631",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "099e599d",
+    "user_id": "USER_16946d79",
+    "candidate_id": "I#20250021",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Smart Agriculture Forecasting System",
+      "Domain": "environment",
+      "Idea Description": "This project focuses on developing an AI-powered prediction system that analyzes environmental data, soil parameters, and market trends to forecast crop yields, pest risks, and weather impacts. The system integrates data from IoT sensors, satellite imagery, and historical yield records to help farmers and policymakers make data-driven agricultural decisions."
+    },
+    "timestamp": "2025-12-08T16:37:00.040028",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "812bd858",
+    "user_id": "USER_16946d79",
+    "candidate_id": "I#20250024",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Smart Agriculture Forecasting System",
+      "Domain": "environment",
+      "Idea Description": "This project focuses on developing an AI-powered prediction system that analyzes environmental data, soil parameters, and market trends to forecast crop yields, pest risks, and weather impacts. The system integrates data from IoT sensors, satellite imagery, and historical yield records to help farmers and policymakers make data-driven agricultural decisions."
+    },
+    "timestamp": "2025-12-08T16:37:06.567347",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "cb5a5e21",
+    "user_id": "USER_2e63fbba",
+    "candidate_id": "I#20250004",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-08T16:51:16.775138",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "d578d2c8",
+    "user_id": "USER_2e63fbba",
+    "candidate_id": "I#20250030",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-08T16:51:18.766975",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "c1d286f2",
+    "user_id": "USER_2e63fbba",
+    "candidate_id": "I#20250052",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "Artificial Intelligence–Enabled Tax Analysis and Policy Formulation",
+      "Domain": "public_services",
+      "Idea Description": "Artificial Intelligence is transforming the way governments, institutions, and financial organizations analyze tax systems and develop effective fiscal policies. AI-assisted tax research and policy making refers to the use of technologies such as machine learning, natural language processing (NLP), predictive analytics, and large-scale data analysis to enhance the accuracy, efficiency, and depth of tax-related decision making."
+    },
+    "timestamp": "2025-12-08T16:51:20.548604",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "a7ac0d70",
+    "user_id": "USER_078b2929",
+    "candidate_id": "I#20250011",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Idea Description: Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness.\r\n\r\nPotential Challenges: Data Volume and Processing Speed: Handling continuous, high-resolution video data from multiple sources in real time. Model Accuracy: Avoiding false positives/negatives in detecting suspicious activities. Hardware Requirements: High computational power needed for edge or cloud-based video analytics. Privacy and Legal Concerns: Managing data storage, privacy compliance (GDPR-like regulations), and secure handling of sensitive footage. Environmental Variations: Ensuring the model performs consistently under different lighting, weather, and crowd conditions."
+    },
+    "timestamp": "2025-12-08T17:18:10.990810",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "d4a9da22",
+    "user_id": "USER_078b2929",
+    "candidate_id": "I#20250009",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Idea Description: Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness.\r\n\r\nPotential Challenges: Data Volume and Processing Speed: Handling continuous, high-resolution video data from multiple sources in real time. Model Accuracy: Avoiding false positives/negatives in detecting suspicious activities. Hardware Requirements: High computational power needed for edge or cloud-based video analytics. Privacy and Legal Concerns: Managing data storage, privacy compliance (GDPR-like regulations), and secure handling of sensitive footage. Environmental Variations: Ensuring the model performs consistently under different lighting, weather, and crowd conditions."
+    },
+    "timestamp": "2025-12-08T17:18:12.538683",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "f03b80a0",
+    "user_id": "USER_078b2929",
+    "candidate_id": "I#20250015",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Idea Description: Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness.\r\n\r\nPotential Challenges: Data Volume and Processing Speed: Handling continuous, high-resolution video data from multiple sources in real time. Model Accuracy: Avoiding false positives/negatives in detecting suspicious activities. Hardware Requirements: High computational power needed for edge or cloud-based video analytics. Privacy and Legal Concerns: Managing data storage, privacy compliance (GDPR-like regulations), and secure handling of sensitive footage. Environmental Variations: Ensuring the model performs consistently under different lighting, weather, and crowd conditions."
+    },
+    "timestamp": "2025-12-08T17:18:14.089741",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "eb0349ed",
+    "user_id": "USER_07225c01",
+    "candidate_id": "I#20250026",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+      "Domain": "public_services",
+      "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization."
+    },
+    "timestamp": "2025-12-08T17:58:12.228839",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "public_services",
+        "Expected benefits": "Reduced citywide congestion and improved commute times\r\n\r\nFaster emergency response through optimized routing\r\n\r\nEnhanced urban planning using long-term traffic trend analytics\r\n\r\nFuel savings & emission reduction",
+        "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization.",
+        "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating heterogeneous data streams from GPS, CCTV, and IoT devices in real-time\r\n\r\nEnsuring prediction accuracy during sudden events (accidents, protests, weather changes)\r\n\r\nHandling high-volume video analytics with low latency\r\n\r\nData privacy & secure transmission for vehicle movement logs"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.5230647467169928
+        },
+        {
+          "case_id": "I#20250032",
+          "case_name": "AI-powered landslide risk prediction and  mapping",
+          "final_score": 0.5017262891666088
+        },
+        {
+          "case_id": "I#20250024",
+          "case_name": "AI-driven socio-economic trend analysis AI-based agricultural forecasting Automated statistical data quality assurance AI-powered demographic projections AI models for price and inflation forecasting",
+          "final_score": 0.5014923124631067
+        },
+        {
+          "case_id": "I#20250015",
+          "case_name": "AI-powered Facial Recognition & Vehicle Identification System for Intelligence Operations",
+          "final_score": 0.4772324860271008
+        },
+        {
+          "case_id": "I#20250011",
+          "case_name": "Traditional CCTV and drone surveillance systems generate vast amounts of  \nvideo but remain passive, requiring human operators to manually monitor   \n",
+          "final_score": 0.46571491474625343
+        }
+      ]
+    }
+  },
+  {
+    "feedback_id": "ddd3e27a",
+    "user_id": "USER_07225c01",
+    "candidate_id": "I#20250032",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+      "Domain": "public_services",
+      "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization."
+    },
+    "timestamp": "2025-12-08T17:58:18.149914",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "public_services",
+        "Expected benefits": "Reduced citywide congestion and improved commute times\r\n\r\nFaster emergency response through optimized routing\r\n\r\nEnhanced urban planning using long-term traffic trend analytics\r\n\r\nFuel savings & emission reduction",
+        "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization.",
+        "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating heterogeneous data streams from GPS, CCTV, and IoT devices in real-time\r\n\r\nEnsuring prediction accuracy during sudden events (accidents, protests, weather changes)\r\n\r\nHandling high-volume video analytics with low latency\r\n\r\nData privacy & secure transmission for vehicle movement logs"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.5230647467169928
+        },
+        {
+          "case_id": "I#20250032",
+          "case_name": "AI-powered landslide risk prediction and  mapping",
+          "final_score": 0.5017262891666088
+        },
+        {
+          "case_id": "I#20250024",
+          "case_name": "AI-driven socio-economic trend analysis AI-based agricultural forecasting Automated statistical data quality assurance AI-powered demographic projections AI models for price and inflation forecasting",
+          "final_score": 0.5014923124631067
+        },
+        {
+          "case_id": "I#20250015",
+          "case_name": "AI-powered Facial Recognition & Vehicle Identification System for Intelligence Operations",
+          "final_score": 0.4772324860271008
+        },
+        {
+          "case_id": "I#20250011",
+          "case_name": "Traditional CCTV and drone surveillance systems generate vast amounts of  \nvideo but remain passive, requiring human operators to manually monitor   \n",
+          "final_score": 0.46571491474625343
+        }
+      ]
+    }
+  },
+  {
+    "feedback_id": "0802c4d5",
+    "user_id": "USER_3c706932",
+    "candidate_id": "I#20250026",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+      "Domain": "public_services",
+      "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization."
+    },
+    "timestamp": "2025-12-08T17:59:28.780084",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "public_services",
+        "Expected benefits": "Reduced citywide congestion and improved commute times\r\n\r\nFaster emergency response through optimized routing\r\n\r\nEnhanced urban planning using long-term traffic trend analytics\r\n\r\nFuel savings & emission reduction",
+        "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization.",
+        "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating heterogeneous data streams from GPS, CCTV, and IoT devices in real-time\r\n\r\nEnsuring prediction accuracy during sudden events (accidents, protests, weather changes)\r\n\r\nHandling high-volume video analytics with low latency\r\n\r\nData privacy & secure transmission for vehicle movement logs"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.5230647467169928
+        },
+        {
+          "case_id": "I#20250032",
+          "case_name": "AI-powered landslide risk prediction and  mapping",
+          "final_score": 0.5017262891666088
+        },
+        {
+          "case_id": "I#20250024",
+          "case_name": "AI-driven socio-economic trend analysis AI-based agricultural forecasting Automated statistical data quality assurance AI-powered demographic projections AI models for price and inflation forecasting",
+          "final_score": 0.5014923124631067
+        },
+        {
+          "case_id": "I#20250015",
+          "case_name": "AI-powered Facial Recognition & Vehicle Identification System for Intelligence Operations",
+          "final_score": 0.4772324860271008
+        },
+        {
+          "case_id": "I#20250011",
+          "case_name": "Traditional CCTV and drone surveillance systems generate vast amounts of  \nvideo but remain passive, requiring human operators to manually monitor   \n",
+          "final_score": 0.46571491474625343
+        }
+      ]
+    }
+  },
+  {
+    "feedback_id": "362b6a4f",
+    "user_id": "USER_3c706932",
+    "candidate_id": "I#20250032",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+      "Domain": "public_services",
+      "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization."
+    },
+    "timestamp": "2025-12-08T17:59:30.641492",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "public_services",
+        "Expected benefits": "Reduced citywide congestion and improved commute times\r\n\r\nFaster emergency response through optimized routing\r\n\r\nEnhanced urban planning using long-term traffic trend analytics\r\n\r\nFuel savings & emission reduction",
+        "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization.",
+        "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating heterogeneous data streams from GPS, CCTV, and IoT devices in real-time\r\n\r\nEnsuring prediction accuracy during sudden events (accidents, protests, weather changes)\r\n\r\nHandling high-volume video analytics with low latency\r\n\r\nData privacy & secure transmission for vehicle movement logs"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.5230647467169928
+        },
+        {
+          "case_id": "I#20250032",
+          "case_name": "AI-powered landslide risk prediction and  mapping",
+          "final_score": 0.5017262891666088
+        },
+        {
+          "case_id": "I#20250024",
+          "case_name": "AI-driven socio-economic trend analysis AI-based agricultural forecasting Automated statistical data quality assurance AI-powered demographic projections AI models for price and inflation forecasting",
+          "final_score": 0.5014923124631067
+        },
+        {
+          "case_id": "I#20250015",
+          "case_name": "AI-powered Facial Recognition & Vehicle Identification System for Intelligence Operations",
+          "final_score": 0.4772324860271008
+        },
+        {
+          "case_id": "I#20250011",
+          "case_name": "Traditional CCTV and drone surveillance systems generate vast amounts of  \nvideo but remain passive, requiring human operators to manually monitor   \n",
+          "final_score": 0.46571491474625343
+        }
+      ]
+    }
+  },
+  {
+    "feedback_id": "e1ab07d4",
+    "user_id": "USER_3c706932",
+    "candidate_id": "I#20250024",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+      "Domain": "public_services",
+      "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization."
+    },
+    "timestamp": "2025-12-08T17:59:32.275847",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "public_services",
+        "Expected benefits": "Reduced citywide congestion and improved commute times\r\n\r\nFaster emergency response through optimized routing\r\n\r\nEnhanced urban planning using long-term traffic trend analytics\r\n\r\nFuel savings & emission reduction",
+        "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization.",
+        "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating heterogeneous data streams from GPS, CCTV, and IoT devices in real-time\r\n\r\nEnsuring prediction accuracy during sudden events (accidents, protests, weather changes)\r\n\r\nHandling high-volume video analytics with low latency\r\n\r\nData privacy & secure transmission for vehicle movement logs"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.5230647467169928
+        },
+        {
+          "case_id": "I#20250032",
+          "case_name": "AI-powered landslide risk prediction and  mapping",
+          "final_score": 0.5017262891666088
+        },
+        {
+          "case_id": "I#20250024",
+          "case_name": "AI-driven socio-economic trend analysis AI-based agricultural forecasting Automated statistical data quality assurance AI-powered demographic projections AI models for price and inflation forecasting",
+          "final_score": 0.5014923124631067
+        },
+        {
+          "case_id": "I#20250015",
+          "case_name": "AI-powered Facial Recognition & Vehicle Identification System for Intelligence Operations",
+          "final_score": 0.4772324860271008
+        },
+        {
+          "case_id": "I#20250011",
+          "case_name": "Traditional CCTV and drone surveillance systems generate vast amounts of  \nvideo but remain passive, requiring human operators to manually monitor   \n",
+          "final_score": 0.46571491474625343
+        }
+      ]
+    }
+  },
+  {
+    "feedback_id": "6f84db91",
+    "user_id": "USER_6c89ce29",
+    "candidate_id": "I#20250054",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+      "Domain": "healthcare",
+      "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response."
+    },
+    "timestamp": "2025-12-10T10:40:09.081148",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "healthcare",
+        "Expected benefits": "Early detection of disease outbreaks\r\n\r\nFaster public health interventions\r\n\r\nReduced mortality and spread of infectious diseases\r\n\r\nData-driven allocation of medical resources",
+        "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response.",
+        "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating sensitive health data across multiple hospitals and labs\r\n\r\nEnsuring compliance with data protection laws (DPDP Act)\r\n\r\nHandling incomplete or noisy health record data\r\n\r\nMaintaining real-time performance during health emergencies"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250036",
+          "case_name": "NLP-enabled Real-time Consultation Transcription with \nVoice assistance , Integration with Digital Health Systems ",
+          "final_score": 0.44070169649203894
+        },
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.4210713687748165
+        },
+        {
+          "case_id": "I#20250035",
+          "case_name": "AI-powered Health Screening with Consent-based Data Sharing",
+          "final_score": 0.4114230739664539
+        },
+        {
+          "case_id": "I#20250054",
+          "case_name": "Predictive analytics for demand forecasting and policy impact assessment",
+          "final_score": 0.3951332243429858
+        },
+        {
+          "case_id": "I#20250030",
+          "case_name": "AI-Enabled Local Development Assistance Planner",
+          "final_score": 0.3780790045990197
+        }
+      ]
+    }
+  },
+  {
+    "feedback_id": "d243b1c9",
+    "user_id": "USER_6c89ce29",
+    "candidate_id": "I#20250030",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+      "Domain": "healthcare",
+      "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response."
+    },
+    "timestamp": "2025-12-10T10:40:18.406432",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "healthcare",
+        "Expected benefits": "Early detection of disease outbreaks\r\n\r\nFaster public health interventions\r\n\r\nReduced mortality and spread of infectious diseases\r\n\r\nData-driven allocation of medical resources",
+        "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response.",
+        "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating sensitive health data across multiple hospitals and labs\r\n\r\nEnsuring compliance with data protection laws (DPDP Act)\r\n\r\nHandling incomplete or noisy health record data\r\n\r\nMaintaining real-time performance during health emergencies"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250036",
+          "case_name": "NLP-enabled Real-time Consultation Transcription with \nVoice assistance , Integration with Digital Health Systems ",
+          "final_score": 0.44070169649203894
+        },
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.4210713687748165
+        },
+        {
+          "case_id": "I#20250035",
+          "case_name": "AI-powered Health Screening with Consent-based Data Sharing",
+          "final_score": 0.4114230739664539
+        },
+        {
+          "case_id": "I#20250054",
+          "case_name": "Predictive analytics for demand forecasting and policy impact assessment",
+          "final_score": 0.3951332243429858
+        },
+        {
+          "case_id": "I#20250030",
+          "case_name": "AI-Enabled Local Development Assistance Planner",
+          "final_score": 0.3780790045990197
+        }
+      ]
+    }
+  },
+  {
+    "feedback_id": "a83df046",
+    "user_id": "USER_d0c4eee7",
+    "candidate_id": "I#20250026",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+      "Domain": "public_services",
+      "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization."
+    },
+    "timestamp": "2025-12-10T10:55:33.976136",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "public_services",
+        "Expected benefits": "Reduced citywide congestion and improved commute times\r\n\r\nFaster emergency response through optimized routing\r\n\r\nEnhanced urban planning using long-term traffic trend analytics\r\n\r\nFuel savings & emission reduction",
+        "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization.",
+        "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating heterogeneous data streams from GPS, CCTV, and IoT devices in real-time\r\n\r\nEnsuring prediction accuracy during sudden events (accidents, protests, weather changes)\r\n\r\nHandling high-volume video analytics with low latency\r\n\r\nData privacy & secure transmission for vehicle movement logs"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.4954231726826588
+        },
+        {
+          "case_id": "I#20250024",
+          "case_name": "AI-driven socio-economic trend analysis AI-based agricultural forecasting Automated statistical data quality assurance AI-powered demographic projections AI models for price and inflation forecasting",
+          "final_score": 0.4869490773235874
+        },
+        {
+          "case_id": "I#20250032",
+          "case_name": "AI-powered landslide risk prediction and  mapping",
+          "final_score": 0.4763328687025804
+        },
+        {
+          "case_id": "I#20250011",
+          "case_name": "Traditional CCTV and drone surveillance systems generate vast amounts of  \nvideo but remain passive, requiring human operators to manually monitor   \n",
+          "final_score": 0.43208372450870247
+        },
+        {
+          "case_id": "I#20250015",
+          "case_name": "AI-powered Facial Recognition & Vehicle Identification System for Intelligence Operations",
+          "final_score": 0.42456308781444574
+        }
+      ]
+    }
+  }
+]

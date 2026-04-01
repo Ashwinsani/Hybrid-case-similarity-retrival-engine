@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_66d42f0c",
+    "created_at": "20251112_173558",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services environment detection monitoring automation conventional camera drone based surveillance setup produce enormous video data lack intelligence depending heavily human staff continuous observation project proposes integrating driven video analytics automatically detect unusual activity track object send alert real time minimizing manual effort improving situational awareness data volume processing speed: handling continuous, high resolution video data multiple sources real time. model accuracy: avoiding false positives negatives detecting suspicious activities. hardware requirements: high computational power needed edge cloud based video analytics. privacy legal concerns: managing data storage, privacy compliance gdpr like regulations secure handling sensitive footage. environmental variations: ensuring model performs consistently different lighting, weather, crowd conditions.",
+    "similarity_text_length": 909,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

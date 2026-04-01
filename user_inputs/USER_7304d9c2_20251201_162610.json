@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_7304d9c2",
+    "timestamp": "20251201_162610",
+    "form_data": {
+        "Idea Name": "Test AI Healthcare System",
+        "Domain": "Healthcare",
+        "fundingSource": "Government Grants",
+        "Expected benefits": "Better patient outcomes",
+        "Idea Description": "AI system for medical diagnosis",
+        "potentail Challenges": "Data privacy, Regulation"
+    },
+    "similarity_text": "domain_healthcare healthcare system medical diagnosis data privacy, regulation",
+    "processed_at": "2025-12-01T16:26:11.614185"
+}

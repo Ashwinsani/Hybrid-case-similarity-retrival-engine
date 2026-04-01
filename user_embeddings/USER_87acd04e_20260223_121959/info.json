@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_87acd04e",
+    "created_at": "20260223_121959",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_agriculture agriculture environment design driven solution estimate agricultural output across various region analyzing past farming record climate trend remote sensing satellite data",
+    "similarity_text_length": 190,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potential Challenges"
+    ]
+}

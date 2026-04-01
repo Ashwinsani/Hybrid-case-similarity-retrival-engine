@@ -1,0 +1,104 @@
+[
+  {
+    "feedback_id": "eb0349ed",
+    "user_id": "USER_07225c01",
+    "candidate_id": "I#20250026",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+      "Domain": "public_services",
+      "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization."
+    },
+    "timestamp": "2025-12-08T17:58:12.228839",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "public_services",
+        "Expected benefits": "Reduced citywide congestion and improved commute times\r\n\r\nFaster emergency response through optimized routing\r\n\r\nEnhanced urban planning using long-term traffic trend analytics\r\n\r\nFuel savings & emission reduction",
+        "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization.",
+        "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating heterogeneous data streams from GPS, CCTV, and IoT devices in real-time\r\n\r\nEnsuring prediction accuracy during sudden events (accidents, protests, weather changes)\r\n\r\nHandling high-volume video analytics with low latency\r\n\r\nData privacy & secure transmission for vehicle movement logs"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.5230647467169928
+        },
+        {
+          "case_id": "I#20250032",
+          "case_name": "AI-powered landslide risk prediction and  mapping",
+          "final_score": 0.5017262891666088
+        },
+        {
+          "case_id": "I#20250024",
+          "case_name": "AI-driven socio-economic trend analysis AI-based agricultural forecasting Automated statistical data quality assurance AI-powered demographic projections AI models for price and inflation forecasting",
+          "final_score": 0.5014923124631067
+        },
+        {
+          "case_id": "I#20250015",
+          "case_name": "AI-powered Facial Recognition & Vehicle Identification System for Intelligence Operations",
+          "final_score": 0.4772324860271008
+        },
+        {
+          "case_id": "I#20250011",
+          "case_name": "Traditional CCTV and drone surveillance systems generate vast amounts of  \nvideo but remain passive, requiring human operators to manually monitor   \n",
+          "final_score": 0.46571491474625343
+        }
+      ]
+    }
+  },
+  {
+    "feedback_id": "ddd3e27a",
+    "user_id": "USER_07225c01",
+    "candidate_id": "I#20250032",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+      "Domain": "public_services",
+      "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization."
+    },
+    "timestamp": "2025-12-08T17:58:18.149914",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "public_services",
+        "Expected benefits": "Reduced citywide congestion and improved commute times\r\n\r\nFaster emergency response through optimized routing\r\n\r\nEnhanced urban planning using long-term traffic trend analytics\r\n\r\nFuel savings & emission reduction",
+        "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization.",
+        "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating heterogeneous data streams from GPS, CCTV, and IoT devices in real-time\r\n\r\nEnsuring prediction accuracy during sudden events (accidents, protests, weather changes)\r\n\r\nHandling high-volume video analytics with low latency\r\n\r\nData privacy & secure transmission for vehicle movement logs"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.5230647467169928
+        },
+        {
+          "case_id": "I#20250032",
+          "case_name": "AI-powered landslide risk prediction and  mapping",
+          "final_score": 0.5017262891666088
+        },
+        {
+          "case_id": "I#20250024",
+          "case_name": "AI-driven socio-economic trend analysis AI-based agricultural forecasting Automated statistical data quality assurance AI-powered demographic projections AI models for price and inflation forecasting",
+          "final_score": 0.5014923124631067
+        },
+        {
+          "case_id": "I#20250015",
+          "case_name": "AI-powered Facial Recognition & Vehicle Identification System for Intelligence Operations",
+          "final_score": 0.4772324860271008
+        },
+        {
+          "case_id": "I#20250011",
+          "case_name": "Traditional CCTV and drone surveillance systems generate vast amounts of  \nvideo but remain passive, requiring human operators to manually monitor   \n",
+          "final_score": 0.46571491474625343
+        }
+      ]
+    }
+  }
+]

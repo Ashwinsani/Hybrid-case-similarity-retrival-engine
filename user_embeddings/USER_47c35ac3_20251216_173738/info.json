@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_47c35ac3",
+    "created_at": "20251216_173738",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services ai_ml governance detection analysis project aim build based fraud_detection system analyzes transaction pattern user behavior historical fraud case detect suspicious activity real time system support government financial institution preventing financial loss improving trust highly imbalanced datasets. evolving fraud patterns. low tolerance false positives.",
+    "similarity_text_length": 381,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

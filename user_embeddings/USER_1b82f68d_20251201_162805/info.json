@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_1b82f68d",
+    "created_at": "20251201_162805",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services",
+    "similarity_text_length": 22,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

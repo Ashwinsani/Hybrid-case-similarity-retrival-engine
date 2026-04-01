@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Search - Custom Weighting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --premium-blue: #0d6efd;
+            --premium-green: #198754;
+        }
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: #333;
+        }
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .control-sidebar {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid #e9ecef;
+            position: sticky;
+            top: 20px;
+        }
+        .slider-group {
+            margin-bottom: 20px;
+        }
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #495057;
+            font-size: 0.9rem;
+        }
+        .weight-score {
+            color: var(--premium-blue);
+            font-weight: 700;
+        }
+        .total-status-badge {
+            font-size: 1rem;
+            padding: 8px;
+            border-radius: 8px;
+            width: 100%;
+            display: block;
+            text-align: center;
+            font-weight: 600;
+        }
+        /* Results Styles matching results.html */
+        .case-item {
+            border-left: 4px solid #0d6efd;
+            transition: all 0.3s ease;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .case-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateX(4px);
+        }
+        .similarity-badge {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+        .score-bar-container {
+            height: 6px;
+            background-color: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .score-bar-fill {
+            height: 100%;
+            background-color: #0d6efd;
+            border-radius: 3px;
+            transition: width 0.5s ease-in-out;
+        }
+        .placeholder-box {
+            background: #fff;
+            border: 2px dashed #dee2e6;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            color: #adb5bd;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">Idea Similarity Finder</a>
+        <div class="navbar-nav ms-auto">
+            <a href="/results/{{ user_id }}" class="btn btn-outline-light btn-sm">Back to Analysis</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4 mb-5">
+    <div class="row">
+        <!-- SIDEBAR CONTROLS -->
+        <div class="col-md-4">
+            <div class="control-sidebar">
+                <h5 class="fw-bold mb-3">Weight Configuration</h5>
+                <p class="small text-muted mb-4">Fine-tune the weights for the 4 similarity methods. Total must equal 100%.</p>
+                
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Semantic</span>
+                        <span class="weight-score" id="val-semantic">0.25</span>
+                    </div>
+                    <input type="range" class="form-range weight-slider" id="slider-semantic" min="0" max="100" value="25">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Lexical (Field)</span>
+                        <span class="weight-score" id="val-lexical">0.25</span>
+                    </div>
+                    <input type="range" class="form-range weight-slider" id="slider-lexical" min="0" max="100" value="25">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>BM25</span>
+                        <span class="weight-score" id="val-bm25">0.25</span>
+                    </div>
+                    <input type="range" class="form-range weight-slider" id="slider-bm25" min="0" max="100" value="25">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>N-Gram</span>
+                        <span class="weight-score" id="val-ngram">0.25</span>
+                    </div>
+                    <input type="range" class="form-range weight-slider" id="slider-ngram" min="0" max="100" value="25">
+                </div>
+
+                <hr class="my-3">
+                <h5 class="fw-bold mb-3">Filtering</h5>
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <span>Min Threshold</span>
+                        <span class="weight-score" id="val-threshold">0.50</span>
+                    </div>
+                    <input type="range" class="form-range" id="slider-threshold" min="0" max="100" value="50">
+                    <small class="text-muted" style="font-size: 0.75rem;">Only show cases scoring above this value</small>
+                </div>
+
+                <div id="total-status" class="badge bg-success total-status-badge mb-3">Total: 100%</div>
+                
+                <button id="rerank-btn" class="btn btn-primary w-100 py-2 fw-bold shadow-sm">Manual Re-Rank</button>
+                <div class="text-center mt-3">
+                    <a href="/results/{{ user_id }}" class="text-muted small text-decoration-none">← Return to Auto-Tuned Results</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN RESULTS AREA -->
+        <div class="col-md-8">
+            <div id="header-area" class="d-none">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h2 class="fw-bold mb-0">Manual Results</h2>
+                        <p class="text-muted mb-0"><span id="match-stats" class="fw-bold text-primary">0</span> similar cases found across dataset</p>
+                    </div>
+                    <div class="badge bg-warning text-dark px-3 py-2">Manual Mode</div>
+                </div>
+            </div>
+
+            <div id="results-container">
+                <div class="placeholder-box p-5 text-center">
+                    <div class="mb-3" style="font-size: 3rem;">⚙️</div>
+                    <h4 class="text-dark">Ready for Manual Re-Rank</h4>
+                    <p class="text-muted small">Adjust the weight sliders on the left and click the button to compute custom similarity rankings across the entire dataset.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const rawCases = {{ similar_cases|tojson }};
+    const sliders = {
+        semantic: document.getElementById('slider-semantic'),
+        lexical: document.getElementById('slider-lexical'),
+        bm25: document.getElementById('slider-bm25'),
+        ngram: document.getElementById('slider-ngram'),
+        threshold: document.getElementById('slider-threshold')
+    };
+    
+    const displays = {
+        semantic: document.getElementById('val-semantic'),
+        lexical: document.getElementById('val-lexical'),
+        bm25: document.getElementById('val-bm25'),
+        ngram: document.getElementById('val-ngram'),
+        threshold: document.getElementById('val-threshold')
+    };
+
+    const container = document.getElementById('results-container');
+    const headerArea = document.getElementById('header-area');
+    const totalStatus = document.getElementById('total-status');
+    const matchStatsDisplay = document.getElementById('match-stats');
+    const rerankBtn = document.getElementById('rerank-btn');
+
+    let hasReranked = false;
+
+    function updateRankingDisplay() {
+        const w = {
+            semantic: parseInt(sliders.semantic.value) / 100,
+            lexical: parseInt(sliders.lexical.value) / 100,
+            bm25: parseInt(sliders.bm25.value) / 100,
+            ngram: parseInt(sliders.ngram.value) / 100
+        };
+        const threshold = parseInt(sliders.threshold.value) / 100;
+
+        // Update Labels
+        Object.keys(displays).forEach(k => {
+            if (k === 'threshold') displays[k].innerText = threshold.toFixed(2);
+            else displays[k].innerText = w[k].toFixed(2);
+        });
+
+        // Sum Check
+        const total = Math.round((w.semantic + w.lexical + w.bm25 + w.ngram) * 100);
+        totalStatus.innerText = `Total: ${total}%`;
+        totalStatus.className = total === 100 ? 'badge bg-success total-status-badge mb-3' : 'badge bg-danger total-status-badge mb-3';
+
+        if (!hasReranked) return; // Don't show results yet
+
+        // Calculation
+        let ranked = rawCases.map(c => {
+            const s = c.similarity_scores || {};
+            const score = (w.semantic * (s.semantic || 0)) + 
+                          (w.lexical * (s.field_score || 0)) + 
+                          (w.bm25 * (s.bm25 || 0)) + 
+                          (w.ngram * (s.ngram || 0));
+            return { ...c, manualScore: score };
+        });
+
+        const filtered = ranked.filter(c => c.manualScore >= threshold);
+        filtered.sort((a, b) => b.manualScore - a.manualScore);
+        
+        matchStatsDisplay.innerText = filtered.length;
+        headerArea.classList.remove('d-none');
+
+        if (filtered.length === 0) {
+            container.innerHTML = `
+                <div class="no-results text-center py-5 border rounded bg-light">
+                    <h4>No results found for these settings</h4>
+                    <p class="text-muted">Try lowering the threshold or adjusting the weights.</p>
+                </div>`;
+            return;
+        }
+
+        container.innerHTML = filtered.slice(0, 100).map((c, idx) => `
+            <div class="case-item p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                        <div class="d-flex align-items-center mb-1">
+                            <span class="text-muted me-2">#${idx + 1}</span>
+                            <h5 class="fw-bold mb-0">${c.case_name}</h5>
+                        </div>
+                        <span class="badge bg-light text-dark border mb-2" style="font-size: 0.75rem;">${c.domain}</span>
+                        <p class="small text-muted mb-2" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                            ${c.description}
+                        </p>
+                        <div class="score-bar-container">
+                            <div class="score-bar-fill" style="width: ${c.manualScore * 100}%"></div>
+                        </div>
+                    </div>
+                    <div class="ms-3 text-end">
+                        <div class="similarity-badge 
+                            ${c.manualScore > 0.6 ? 'bg-success text-white' : (c.manualScore > 0.4 ? 'bg-warning text-dark' : 'bg-primary text-white')}">
+                            ${c.manualScore.toFixed(4)}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // Event listeners for inputs (only label updates if not reranked)
+    Object.keys(sliders).forEach(key => {
+        sliders[key].addEventListener('input', updateRankingDisplay);
+    });
+
+    rerankBtn.addEventListener('click', () => {
+        const total = Math.round((parseInt(sliders.semantic.value) + parseInt(sliders.lexical.value) + parseInt(sliders.bm25.value) + parseInt(sliders.ngram.value)));
+        if (total !== 100) {
+            alert("Error: Method weights must sum up to exactly 100%!");
+            return;
+        }
+        hasReranked = true;
+        updateRankingDisplay();
+        
+        // Scroll to top of results if needed
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Initial load: Only show labels/sliders
+    updateRankingDisplay();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_f3616b78",
+    "created_at": "20251212_105853",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_healthcare ai_ml healthcare environment detection prediction monitoring project focus developing based early disease outbreak detection platform using real time health record hospital admission log environmental_data population mobility pattern system identifies unusual spike symptom predicts potential outbreak zone alert healthcare authority integrates data hospital wearable device pathology lab public health surveillance system model detect anomaly geospatial analytics create hotspot map rapid response integrating sensitive health data across multiple hospitals labs ensuring compliance data protection laws dpdp act handling incomplete noisy health record data maintaining real time performance health emergencies",
+    "similarity_text_length": 729,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

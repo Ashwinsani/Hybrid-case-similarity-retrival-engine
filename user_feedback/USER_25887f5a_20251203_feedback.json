@@ -1,0 +1,30 @@
+[
+  {
+    "feedback_id": "b15cddbc",
+    "user_id": "USER_25887f5a",
+    "candidate_id": "I#20250021",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Smart Agriculture Forecasting System",
+      "Domain": "environment",
+      "Idea Description": "This project focuses on developing an AI-powered prediction system that analyzes environmental data, soil parameters, and market trends to forecast crop yields, pest risks, and weather impacts. The system integrates data from IoT sensors, satellite imagery, and historical yield records to help farmers and policymakers make data-driven agricultural decisions."
+    },
+    "timestamp": "2025-12-03T17:46:59.590530",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "1e6ee08a",
+    "user_id": "USER_25887f5a",
+    "candidate_id": "I#20250024",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Smart Agriculture Forecasting System",
+      "Domain": "environment",
+      "Idea Description": "This project focuses on developing an AI-powered prediction system that analyzes environmental data, soil parameters, and market trends to forecast crop yields, pest risks, and weather impacts. The system integrates data from IoT sensors, satellite imagery, and historical yield records to help farmers and policymakers make data-driven agricultural decisions."
+    },
+    "timestamp": "2025-12-03T17:47:05.566158",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  }
+]

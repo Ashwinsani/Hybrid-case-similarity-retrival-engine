@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_70676aba",
+    "timestamp": "20260318_142800",
+    "form_data": {
+        "Idea Name": "Finance Dept",
+        "Domain": "public_services",
+        "fundingSource": "- Can be supported under Digital Kerala / Emerging Technologies schemes. - Possible use of existing departmental IT budget for pilot phase",
+        "Expected benefits": "Time saved in locating relevant documents - Reduction in errors due to use of outdated GOs - Improved efficiency in decision-making - Single authoritative reference for all officials - Better transparency and accountability",
+        "Idea Description": "The Finance Department issues a very large number of Government Orders (GOs), circulars, \r\nnotifications, office memoranda, and budget documents every year. While these are \r\npublished on the Department’s website, officials face several challenges in using them \r\neffectively: - Difficulty in retrieval: With thousands of documents spanning multiple years, it is time\r\nconsuming to locate the exact order relevant to a case. - Version confusion: Officials sometimes rely on outdated or superseded GOs, as revised or \r\nwithdrawn versions are not easily traceable. - Mixed formats: Older documents are available only as scanned PDFs, while newer ones \r\nare machine-readable. This inconsistency makes uniform searching difficult. - Lack of contextual guidance: Current systems do not indicate whether a GO is still valid, \r\namended, or withdrawn, leaving scope for errors. - Operational delays: File processing and decision-making are slowed down because \r\nofficials spend significant time verifying the correctness of documents. \r\nTogether, these issues affect the efficiency, accuracy, and reliability of financial governance.",
+        "potential Challenges": "NA"
+    },
+    "similarity_text": "domain_public_services ai_ml governance finance department issues large number government_orders gos circulars notifications office memoranda budget documents every year published department website officials face several challenges using effectively difficulty retrieval thousands documents spanning multiple years time consuming locate exact order relevant case version confusion officials sometimes rely outdated superseded gos revised withdrawn versions easily traceable mixed formats older documents available scanned pdfs newer ones machine readable inconsistency makes uniform searching difficult lack contextual guidance current systems indicate whether still valid amended withdrawn leaving scope errors operational delays file processing decision making slowed officials spend significant time verifying correctness documents together issues affect efficiency accuracy reliability financial governance",
+    "processed_at": "2026-03-18T14:28:01.255624"
+}

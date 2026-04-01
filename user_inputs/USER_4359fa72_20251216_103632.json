@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_4359fa72",
+    "timestamp": "20251216_103632",
+    "form_data": {
+        "Idea Name": "AI-Based Smart Energy Demand Forecasting and Grid Optimization System",
+        "Domain": "public_services",
+        "fundingSource": "govt",
+        "Expected benefits": "Reduced power outages.\r\nEfficient energy utilization.\r\nLower operational costs.",
+        "Idea Description": "This system predicts energy demand using consumption patterns, weather data, industrial activity, and seasonal trends. It helps government energy agencies optimize power generation, reduce outages, and support renewable energy integration.",
+        "potentail Challenges": "High-frequency time-series data handling.\r\nIntegration with legacy grid systems.\r\nForecasting renewable variability."
+    },
+    "similarity_text": "domain_public_services governance prediction optimization system predicts energy demand using consumption pattern weather data industrial activity seasonal trend help government energy agency optimize power generation reduce outage support renewable energy integration high frequency time series data handling. integration legacy grid systems. forecasting renewable variability.",
+    "processed_at": "2025-12-16T10:36:36.092774"
+}

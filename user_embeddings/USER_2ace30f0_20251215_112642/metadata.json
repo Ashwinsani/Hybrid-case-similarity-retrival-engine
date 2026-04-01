@@ -1,0 +1,8 @@
+{
+    "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+    "Domain": "healthcare",
+    "fundingSource": "govt",
+    "Expected benefits": "Early detection of disease outbreaks\r\n\r\nFaster public health interventions\r\n\r\nReduced mortality and spread of infectious diseases\r\n\r\nData-driven allocation of medical resources",
+    "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response.",
+    "potentail Challenges": "Integrating sensitive health data across multiple hospitals and labs\r\n\r\nEnsuring compliance with data protection laws (DPDP Act)\r\n\r\nHandling incomplete or noisy health record data\r\n\r\nMaintaining real-time performance during health emergencies"
+}

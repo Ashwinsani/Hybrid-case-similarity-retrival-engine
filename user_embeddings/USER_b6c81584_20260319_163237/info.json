@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_b6c81584",
+    "created_at": "20260319_163237",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services ai_ml governance detection intelligent search powered portal enables user find government_orders quickly accurately using natural language query instead browsing file officer type question keyword plain language e.g. show go related budget allocation instantly retrieve relevant document ocr conversion old files.",
+    "similarity_text_length": 336,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potential Challenges"
+    ]
+}

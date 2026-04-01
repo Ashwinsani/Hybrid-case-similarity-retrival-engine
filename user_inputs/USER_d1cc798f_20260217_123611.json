@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_d1cc798f",
+    "timestamp": "20260217_123611",
+    "form_data": {
+        "Idea Name": "AI-based travel time prediction",
+        "Domain": "public_services",
+        "fundingSource": "govt",
+        "Expected benefits": "predict time taken to travel between two destination",
+        "Idea Description": "predict travel time based on all the factors related to road",
+        "potential Challenges": "NA"
+    },
+    "similarity_text": "domain_public_services prediction predict travel time based factor related road",
+    "processed_at": "2026-02-17T12:36:11.419996"
+}

@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_eeb75d21",
+    "created_at": "20251218_124430",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_law_enforcement healthcare prediction analysis project focus developing powered analytics system predicts future healthcare infrastructure need hospital bed icu capacity medical staff equipment model analyzes patient admission record disease trend population demographic seasonal outbreak public health data support proactive healthcare planning handling sensitive healthcare data securely. managing data imbalance across rural urban regions. ensuring model interpretability policy decisions.",
+    "similarity_text_length": 499,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

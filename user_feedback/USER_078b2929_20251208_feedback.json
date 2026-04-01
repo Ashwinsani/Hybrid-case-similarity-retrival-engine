@@ -1,0 +1,44 @@
+[
+  {
+    "feedback_id": "a7ac0d70",
+    "user_id": "USER_078b2929",
+    "candidate_id": "I#20250011",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Idea Description: Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness.\r\n\r\nPotential Challenges: Data Volume and Processing Speed: Handling continuous, high-resolution video data from multiple sources in real time. Model Accuracy: Avoiding false positives/negatives in detecting suspicious activities. Hardware Requirements: High computational power needed for edge or cloud-based video analytics. Privacy and Legal Concerns: Managing data storage, privacy compliance (GDPR-like regulations), and secure handling of sensitive footage. Environmental Variations: Ensuring the model performs consistently under different lighting, weather, and crowd conditions."
+    },
+    "timestamp": "2025-12-08T17:18:10.990810",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "d4a9da22",
+    "user_id": "USER_078b2929",
+    "candidate_id": "I#20250009",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Idea Description: Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness.\r\n\r\nPotential Challenges: Data Volume and Processing Speed: Handling continuous, high-resolution video data from multiple sources in real time. Model Accuracy: Avoiding false positives/negatives in detecting suspicious activities. Hardware Requirements: High computational power needed for edge or cloud-based video analytics. Privacy and Legal Concerns: Managing data storage, privacy compliance (GDPR-like regulations), and secure handling of sensitive footage. Environmental Variations: Ensuring the model performs consistently under different lighting, weather, and crowd conditions."
+    },
+    "timestamp": "2025-12-08T17:18:12.538683",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "f03b80a0",
+    "user_id": "USER_078b2929",
+    "candidate_id": "I#20250015",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Idea Description: Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness.\r\n\r\nPotential Challenges: Data Volume and Processing Speed: Handling continuous, high-resolution video data from multiple sources in real time. Model Accuracy: Avoiding false positives/negatives in detecting suspicious activities. Hardware Requirements: High computational power needed for edge or cloud-based video analytics. Privacy and Legal Concerns: Managing data storage, privacy compliance (GDPR-like regulations), and secure handling of sensitive footage. Environmental Variations: Ensuring the model performs consistently under different lighting, weather, and crowd conditions."
+    },
+    "timestamp": "2025-12-08T17:18:14.089741",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  }
+]

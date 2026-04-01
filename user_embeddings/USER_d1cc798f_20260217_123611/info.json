@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_d1cc798f",
+    "created_at": "20260217_123611",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services prediction predict travel time based factor related road",
+    "similarity_text_length": 79,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potential Challenges"
+    ]
+}

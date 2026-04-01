@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_b87e3e35",
+    "timestamp": "20251215_160914",
+    "form_data": {
+        "Idea Name": "AI-Based Climate Resilient Water Resource Management System",
+        "Domain": "environment",
+        "fundingSource": "govt",
+        "Expected benefits": "Improved water allocation efficiency\r\n\r\nEarly warning for droughts and floods\r\n\r\nEnhanced climate resilience planning",
+        "Idea Description": "This project aims to develop an AI-driven decision support system to predict water availability, drought risk, and flood scenarios by analyzing rainfall patterns, river basin data, groundwater levels, satellite imagery, and historical climate data. The system assists governments and water authorities in optimizing irrigation schedules, reservoir operations, and disaster preparedness plans.",
+        "potentail Challenges": "Integrating heterogeneous data sources such as hydrological sensors, satellite data, and meteorological APIs\r\n\r\nManaging missing or noisy environmental data\r\n\r\nAdapting predictions to regional climate variability"
+    },
+    "similarity_text": "domain_environment ai_ml iot environment governance prediction project aim develop driven decision_support system predict water availability drought risk flood scenario analyzing rainfall pattern river basin data groundwater level satellite imagery historical climate data system assist government water authority optimizing irrigation schedule reservoir operation disaster preparedness plan integrating heterogeneous data sources hydrological sensors, satellite data, meteorological apis managing missing noisy environmental_data adapting predictions regional climate variability",
+    "processed_at": "2025-12-15T16:09:14.909460"
+}

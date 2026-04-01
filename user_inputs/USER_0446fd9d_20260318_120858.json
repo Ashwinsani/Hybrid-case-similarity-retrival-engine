@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_0446fd9d",
+    "timestamp": "20260318_120858",
+    "form_data": {
+        "Idea Name": "Computer vision for automated monitoring via satellite and CCTV feeds",
+        "Domain": "public_services",
+        "fundingSource": "govt",
+        "Expected benefits": "NA",
+        "Idea Description": "Use AI to analyze satellite images for encroachment/forest loss, detect potholes or traffic violations via CCTV, and monitor construction progress,",
+        "potential Challenges": "NA"
+    },
+    "similarity_text": "domain_public_services detection monitoring analysis use analyze satellite image encroachment forest loss detect pothole traffic violation via cctv monitor construction progress",
+    "processed_at": "2026-03-18T12:08:58.811699"
+}

@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_1e07f061",
+    "created_at": "20260318_142803",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services ai_ml governance finance department issues large number government_orders gos circulars notifications office memoranda budget documents every year published department website officials face several challenges using effectively difficulty retrieval thousands documents spanning multiple years time consuming locate exact order relevant case version confusion officials sometimes rely outdated superseded gos revised withdrawn versions easily traceable mixed formats older documents available scanned pdfs newer ones machine readable inconsistency makes uniform searching difficult lack contextual guidance current systems indicate whether still valid amended withdrawn leaving scope errors operational delays file processing decision making slowed officials spend significant time verifying correctness documents together issues affect efficiency accuracy reliability financial governance",
+    "similarity_text_length": 911,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potential Challenges"
+    ]
+}

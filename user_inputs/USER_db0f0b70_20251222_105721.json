@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_db0f0b70",
+    "timestamp": "20251222_105721",
+    "form_data": {
+        "Idea Name": "AI-Based Predictive Healthcare Infrastructure Planning System",
+        "Domain": "healthcare",
+        "fundingSource": "govt",
+        "Expected benefits": "Improved healthcare preparedness.\r\nReduced infrastructure shortages during outbreaks.\r\nOptimized allocation of medical resources.",
+        "Idea Description": "This project focuses on developing an AI-powered analytics system that predicts future healthcare infrastructure needs such as hospital beds, ICU capacity, medical staff, and equipment. The model analyzes patient admission records, disease trends, population demographics, seasonal outbreaks, and public health data to support proactive healthcare planning.",
+        "potentail Challenges": "Handling sensitive healthcare data securely.\r\nManaging data imbalance across rural and urban regions.\r\nEnsuring model interpretability for policy decisions."
+    },
+    "similarity_text": "domain_healthcare healthcare prediction analysis project focus developing powered analytics system predicts future healthcare infrastructure need hospital bed icu capacity medical staff equipment model analyzes patient admission record disease trend population demographic seasonal outbreak public health data support proactive healthcare planning handling sensitive healthcare data securely. managing data imbalance across rural urban regions. ensuring model interpretability policy decisions.",
+    "processed_at": "2025-12-22T10:57:21.390949"
+}

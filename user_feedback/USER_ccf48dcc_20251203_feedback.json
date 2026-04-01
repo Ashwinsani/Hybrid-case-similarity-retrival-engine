@@ -1,0 +1,16 @@
+[
+  {
+    "feedback_id": "a4fb11d2",
+    "user_id": "USER_ccf48dcc",
+    "candidate_id": "I#20250002",
+    "relevance_score": 1.0,
+    "user_input": {
+      "Idea Name": "SmartGoods Anomaly Intelligence System (SG-AIS)",
+      "Domain": "public_services",
+      "Idea Description": "This system analyzes the movement of goods across states, sectors, and taxpayers using multiple datasets including e-way bills, GPS data, and GST filings (GSTR-1). The system focuses on identifying unusual or suspicious activities by: Monitoring route patterns and flagging route deviations or unexpected stops. Detecting anomalies such as ghost shipments, duplicate trips, repeated invoice use, and invoice-movement mismatches. Integrating GPS traces and e-way bill records to compute route compliance scores using ML models. Cross-verifying movement data with GSTR-1 declarations to detect discrepancies in invoices vs. actual movement. Providing dashboards with alerts, visual heatmaps, trip histories, and anomaly explanations."
+    },
+    "timestamp": "2025-12-03T17:41:46.872079",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  }
+]

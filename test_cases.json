@@ -1,0 +1,34 @@
+[
+  {
+    "rephrased": "AI-Driven Smart Agriculture Forecasting System\nThis project focuses on developing an AI-powered prediction system that analyzes environmental data, soil parameters, and market trends to forecast crop yields, pest risks, and weather impacts. The system integrates data from IoT sensors, satellite imagery, and historical yield records to help farmers and policymakers make data-driven agricultural decisions.",
+    "original": "AI-based agricultural forecasting\nDevelop an AI-powered model to predict crop yields across districts using historical agricultural data, weather patterns, and satellite imagery.",
+    "expected_min_rank": 3,
+    "expected_min_score": 0.7,
+    "domain": "agriculture",
+    "description": "Environmental data analysis with different terminology"
+  },
+  {
+    "rephrased": "Comprehensive AI-Driven Diagnostic Platform\nAn intelligent system that leverages deep learning and computer vision technologies to analyze medical imaging data, including X-rays, CT scans, and MRI images, for early disease detection and patient risk stratification.",
+    "original": "AI-powered medical imaging analysis\nBuild a machine learning model that analyzes medical images to detect diseases.",
+    "expected_min_rank": 5,
+    "expected_min_score": 0.65,
+    "domain": "healthcare",
+    "description": "Same concept, different implementation details"
+  },
+  {
+    "rephrased": "Advanced Environmental Monitoring and Prediction System\nDeploy a comprehensive platform utilizing satellite remote sensing, IoT sensor networks, and advanced analytics to monitor environmental changes, predict climate impacts, and support evidence-based policy decisions.",
+    "original": "Environmental data monitoring\nTrack and analyze environmental metrics using sensor networks and satellites.",
+    "expected_min_rank": 5,
+    "expected_min_score": 0.6,
+    "domain": "environment",
+    "description": "Paraphrased with additional technical details"
+  },
+  {
+    "rephrased": "Intelligent Fraud Detection and Risk Assessment Framework\nDevelop a sophisticated ML-based system for real-time transaction monitoring, anomaly detection, and fraud pattern recognition using ensemble methods and graph neural networks for network analysis.",
+    "original": "Fraud detection system\nCreate a machine learning model to detect fraudulent transactions.",
+    "expected_min_rank": 5,
+    "expected_min_score": 0.65,
+    "domain": "finance",
+    "description": "Similar goal, technical vocabulary expansion"
+  }
+]

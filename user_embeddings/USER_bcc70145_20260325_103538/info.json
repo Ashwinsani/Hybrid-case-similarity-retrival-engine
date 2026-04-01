@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_bcc70145",
+    "created_at": "20260325_103538",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services ai_ml nlp tax_revenue governance prediction optimization analysis artificial intelligence transforming way governments institutions financial organizations analyze tax systems develop effective fiscal policies assisted tax research policy making refers use technologies nlp nlp predictive_analytics large scale data analysis enhance accuracy efficiency depth tax related decision making",
+    "similarity_text_length": 409,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potential Challenges"
+    ]
+}

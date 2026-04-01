@@ -1,0 +1,44 @@
+[
+  {
+    "feedback_id": "0f4d2db9",
+    "user_id": "USER_80de4d68",
+    "candidate_id": "I#20250011",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness."
+    },
+    "timestamp": "2025-12-03T17:49:27.804068",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "55b27f50",
+    "user_id": "USER_80de4d68",
+    "candidate_id": "I#20250009",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness."
+    },
+    "timestamp": "2025-12-03T17:49:29.102526",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  },
+  {
+    "feedback_id": "9b1305e8",
+    "user_id": "USER_80de4d68",
+    "candidate_id": "I#20250015",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+      "Domain": "public_services",
+      "Idea Description": "Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness."
+    },
+    "timestamp": "2025-12-03T17:49:31.650880",
+    "feedback_type": "explicit",
+    "session_id": "unknown"
+  }
+]

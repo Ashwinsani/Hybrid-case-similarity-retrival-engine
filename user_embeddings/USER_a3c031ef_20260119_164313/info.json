@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_a3c031ef",
+    "created_at": "20260119_164313",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_environment iot agriculture environment prediction analysis project focus developing powered prediction system analyzes environmental_data soil parameter market trend forecast crop yield pest risk weather impact system integrates data iot sensor satellite imagery historical yield record help farmer policymakers make data driven agricultural decision handling large, unstructured datasets multiple sources. ensuring forecast accuracy across different soil climate conditions. real time data integration iot satellite apis.",
+    "similarity_text_length": 530,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potential Challenges"
+    ]
+}

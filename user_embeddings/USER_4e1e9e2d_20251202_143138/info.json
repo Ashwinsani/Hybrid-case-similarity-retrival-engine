@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_4e1e9e2d",
+    "created_at": "20251202_143138",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services ai_ml tax_revenue detection monitoring analysis system analyzes movement good across state sector taxpayer using multiple datasets including e-way_bills gps data gst filing gstr system focus identifying unusual suspicious activity monitoring route pattern flagging route_deviations unexpected stop detecting anomaly ghost_shipments duplicate trip repeated invoice use invoice movement mismatch integrating gps trace e-way_bill record compute route compliance score using model cross verifying movement data gstr declaration detect discrepancy invoice vs. actual movement providing dashboard alert visual heatmaps trip history anomaly explanation integration existing departmental platforms portal e-way_bill portal. ensuring full compliance dpdp act, data privacy. maintaining confidentiality per cgst ksgst act section gps based anomaly_detection accuracy may vary depending signal quality, coverage, device reliability. handling ipr concerns securing model logic external misuse.",
+    "similarity_text_length": 1004,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

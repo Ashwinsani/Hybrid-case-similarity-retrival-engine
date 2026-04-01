@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_283470fb",
+    "timestamp": "20251216_125509",
+    "form_data": {
+        "Idea Name": "AI-Driven Crime Pattern Analysis and Predictive Policing System",
+        "Domain": "public_services",
+        "fundingSource": "govt",
+        "Expected benefits": "Improved crime prevention.\r\nEfficient resource deployment.\r\nEnhanced public safety.",
+        "Idea Description": "The project focuses on building an AI system that analyzes crime records, location data, time patterns, and socio-economic factors to predict crime hotspots and trends. The system assists law enforcement agencies in strategic planning and preventive policing.",
+        "potentail Challenges": "Bias in historical crime data.\r\nEthical and legal constraints.\r\nPublic trust and transparency."
+    },
+    "similarity_text": "domain_public_services ai_ml law_enforcement prediction analysis project focus building system analyzes crime record location data time pattern socio economic factor predict crime hotspot trend system assist law enforcement agency strategic planning preventive policing bias historical crime data. ethical legal constraints. public trust transparency.",
+    "processed_at": "2025-12-16T12:55:12.445487"
+}

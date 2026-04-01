@@ -1,0 +1,6 @@
+{
+  "total_cases": 55,
+  "embedding_dim": 384,
+  "model": "all-MiniLM-L6-v2",
+  "saved_at": "2025-11-12T11:15:03.596468"
+}

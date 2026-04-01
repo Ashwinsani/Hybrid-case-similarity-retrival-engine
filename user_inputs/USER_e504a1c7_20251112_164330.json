@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_e504a1c7",
+    "timestamp": "20251112_164330",
+    "form_data": {
+        "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+        "Domain": "public_services",
+        "fundingSource": "govt",
+        "Expected benefits": "Reduced Manual Effort: Minimizes dependency on human operators for continuous video monitoring. Real-Time Threat Detection: AI models can instantly identify anomalies or security risks and trigger automated alerts. Improved Efficiency: Enables faster response times in emergency situations and better situational awareness. Scalable Deployment: Can integrate with existing CCTV or drone infrastructure for smart city or industrial surveillance. Cost-Effective and Reliable: Long-term savings by reducing manpower and operational fatigue while improving monitoring coverage.",
+        "Idea Description": "Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness.",
+        "potentail Challenges": "Data Volume and Processing Speed: Handling continuous, high-resolution video data from multiple sources in real time. Model Accuracy: Avoiding false positives/negatives in detecting suspicious activities. Hardware Requirements: High computational power needed for edge or cloud-based video analytics. Privacy and Legal Concerns: Managing data storage, privacy compliance (GDPR-like regulations), and secure handling of sensitive footage. Environmental Variations: Ensuring the model performs consistently under different lighting, weather, and crowd conditions."
+    },
+    "similarity_text": "domain_public_services environment detection monitoring automation conventional camera drone based surveillance setup produce enormous video data lack intelligence depending heavily human staff continuous observation project proposes integrating driven video analytics automatically detect unusual activity track object send alert real time minimizing manual effort improving situational awareness data volume processing speed: handling continuous, high resolution video data multiple sources real time. model accuracy: avoiding false positives negatives detecting suspicious activities. hardware requirements: high computational power needed edge cloud based video analytics. privacy legal concerns: managing data storage, privacy compliance gdpr like regulations secure handling sensitive footage. environmental variations: ensuring model performs consistently different lighting, weather, crowd conditions.",
+    "processed_at": "2025-11-12T16:43:33.986313"
+}

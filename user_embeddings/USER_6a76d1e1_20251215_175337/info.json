@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_6a76d1e1",
+    "created_at": "20251215_175337",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services detection monitoring analysis use analyze satellite image encroachment forest loss detect pothole traffic violation via cctv monitor construction progress",
+    "similarity_text_length": 177,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

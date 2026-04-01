@@ -1,0 +1,8 @@
+{
+    "Idea Name": "AI-Enhanced Automated Surveillance Analytics",
+    "Domain": "public_services",
+    "fundingSource": "govt",
+    "Expected benefits": "Reduced Manual Effort: Minimizes dependency on human operators for continuous video monitoring. Real-Time Threat Detection: AI models can instantly identify anomalies or security risks and trigger automated alerts. Improved Efficiency: Enables faster response times in emergency situations and better situational awareness. Scalable Deployment: Can integrate with existing CCTV or drone infrastructure for smart city or industrial surveillance. Cost-Effective and Reliable: Long-term savings by reducing manpower and operational fatigue while improving monitoring coverage.",
+    "Idea Description": "Conventional camera and drone-based surveillance setups produce enormous video data but lack intelligence, depending heavily on human staff for continuous observation. This project proposes integrating AI-driven video analytics that can automatically detect unusual activities, track objects, and send alerts in real time, minimizing manual effort and improving situational awareness.",
+    "potential Challenges": "Data Volume and Processing Speed: Handling continuous, high-resolution video data from multiple sources in real time. Model Accuracy: Avoiding false positives/negatives in detecting suspicious activities. Hardware Requirements: High computational power needed for edge or cloud-based video analytics. Privacy and Legal Concerns: Managing data storage, privacy compliance (GDPR-like regulations), and secure handling of sensitive footage. Environmental Variations: Ensuring the model performs consistently under different lighting, weather, and crowd conditions."
+}

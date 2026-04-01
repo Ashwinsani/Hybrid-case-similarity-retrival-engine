@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_e128e9ae",
+    "timestamp": "20251208_174420",
+    "form_data": {
+        "Idea Name": "AI-Based Urban Traffic Prediction & Smart Routing System",
+        "Domain": "public_services",
+        "fundingSource": "govt",
+        "Expected benefits": "Reduced citywide congestion and improved commute times\r\n\r\nFaster emergency response through optimized routing\r\n\r\nEnhanced urban planning using long-term traffic trend analytics\r\n\r\nFuel savings & emission reduction",
+        "Idea Description": "This project aims to build an AI-driven traffic prediction and management system that analyzes real-time traffic inputs, GPS data, road sensors, CCTV feeds, and historical congestion patterns. The system forecasts traffic density, detects anomalies (accidents, roadblocks), and recommends optimized routes. It integrates data from smart signals, vehicle tracking systems, and weather APIs to support city planners, emergency responders, and commuters.\r\n\r\nThe solution will use machine learning models for short-term & long-term congestion forecasting, computer vision models for vehicle counting, and reinforcement learning for automated traffic signal optimization.",
+        "potentail Challenges": "Integrating heterogeneous data streams from GPS, CCTV, and IoT devices in real-time\r\n\r\nEnsuring prediction accuracy during sudden events (accidents, protests, weather changes)\r\n\r\nHandling high-volume video analytics with low latency\r\n\r\nData privacy & secure transmission for vehicle movement logs"
+    },
+    "similarity_text": "domain_public_services ai_ml iot education detection prediction monitoring optimization automation analysis project aim build driven traffic prediction management system analyzes real time traffic input gps data road sensor cctv feed historical congestion pattern system forecast traffic density detects anomaly accident roadblock recommends optimized route integrates data smart signal vehicle tracking system weather apis support city planner emergency responder commuter solution use model short term long term congestion forecasting computer_vision model vehicle counting reinforcement learning automated traffic signal optimization integrating heterogeneous data streams gps, cctv, iot devices real time ensuring prediction accuracy sudden events accidents, protests, weather changes handling high volume video analytics low latency data privacy secure transmission vehicle movement logs",
+    "processed_at": "2025-12-08T17:44:23.501303"
+}

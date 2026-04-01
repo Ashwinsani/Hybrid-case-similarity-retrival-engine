@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_8506751e",
+    "created_at": "20260318_154722",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_public_services ai_ml governance finance department issue large number government_orders go circular notification office memoranda budget document every year published department website official face several challenge using effectively difficulty retrieval thousand document spanning multiple year time consuming locate exact order relevant case version confusion official sometimes rely outdated superseded go revised withdrawn version easily traceable mixed format older document available scanned pdfs newer one machine readable inconsistency make uniform searching difficult lack contextual guidance current system indicate whether still valid amended withdrawn leaving scope error operational delay file processing decision making slowed official spend significant time verifying correctness document together issue affect efficiency accuracy reliability financial governance",
+    "similarity_text_length": 888,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potential Challenges"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_9acc2d81",
+    "created_at": "20251215_161404",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_environment ai_ml iot environment governance prediction project aim develop driven decision_support system predict water availability drought risk flood scenario analyzing rainfall pattern river basin data groundwater level satellite imagery historical climate data system assist government water authority optimizing irrigation schedule reservoir operation disaster preparedness plan integrating heterogeneous data sources hydrological sensors, satellite data, meteorological apis managing missing noisy environmental_data adapting predictions regional climate variability",
+    "similarity_text_length": 580,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

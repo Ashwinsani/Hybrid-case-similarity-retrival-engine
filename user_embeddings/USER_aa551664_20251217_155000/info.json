@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_aa551664",
+    "created_at": "20251217_155000",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_education education take regular attendance student using biometrics",
+    "similarity_text_length": 75,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potentail Challenges"
+    ]
+}

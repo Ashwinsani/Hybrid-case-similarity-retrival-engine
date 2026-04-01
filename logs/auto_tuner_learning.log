@@ -1,0 +1,8 @@
+{"timestamp": "2025-12-08T16:37:00.064920", "event_type": "feedback_received", "details": {"user_id": "USER_16946d79", "candidate_id": "I#20250021", "relevance_score": 1.0, "total_feedback_entries": 2}}
+{"timestamp": "2025-12-08T16:37:06.620932", "event_type": "feedback_received", "details": {"user_id": "USER_16946d79", "candidate_id": "I#20250024", "relevance_score": 1.0, "total_feedback_entries": 2}}
+{"timestamp": "2025-12-08T16:51:16.820391", "event_type": "feedback_received", "details": {"user_id": "USER_2e63fbba", "candidate_id": "I#20250004", "relevance_score": 1.0, "total_feedback_entries": 2}}
+{"timestamp": "2025-12-08T16:51:18.806085", "event_type": "feedback_received", "details": {"user_id": "USER_2e63fbba", "candidate_id": "I#20250030", "relevance_score": 1.0, "total_feedback_entries": 2}}
+{"timestamp": "2025-12-08T16:51:20.607009", "event_type": "feedback_received", "details": {"user_id": "USER_2e63fbba", "candidate_id": "I#20250052", "relevance_score": 0.0, "total_feedback_entries": 2}}
+{"timestamp": "2025-12-08T17:18:11.021090", "event_type": "feedback_received", "details": {"user_id": "USER_078b2929", "candidate_id": "I#20250011", "relevance_score": 1.0, "total_feedback_entries": 2}}
+{"timestamp": "2025-12-08T17:18:12.607154", "event_type": "feedback_received", "details": {"user_id": "USER_078b2929", "candidate_id": "I#20250009", "relevance_score": 1.0, "total_feedback_entries": 2}}
+{"timestamp": "2025-12-08T17:18:14.151369", "event_type": "feedback_received", "details": {"user_id": "USER_078b2929", "candidate_id": "I#20250015", "relevance_score": 1.0, "total_feedback_entries": 2}}

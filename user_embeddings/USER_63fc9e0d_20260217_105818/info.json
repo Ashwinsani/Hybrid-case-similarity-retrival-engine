@@ -1,0 +1,16 @@
+{
+    "user_id": "USER_63fc9e0d",
+    "created_at": "20260217_105818",
+    "model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "similarity_text": "domain_healthcare healthcare detection provides individual reliable easy understand health guidance information facilitates early identification potential health issue ensures timely referral appropriate healthcare center minimizes unnecessary outpatient visit enabling initial remote health assessment screening promotes preventive healthcare practice optimizing utilization medical resource",
+    "similarity_text_length": 392,
+    "form_fields": [
+        "Idea Name",
+        "Domain",
+        "fundingSource",
+        "Expected benefits",
+        "Idea Description",
+        "potential Challenges"
+    ]
+}

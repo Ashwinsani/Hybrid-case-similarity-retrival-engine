@@ -1,0 +1,104 @@
+[
+  {
+    "feedback_id": "6f84db91",
+    "user_id": "USER_6c89ce29",
+    "candidate_id": "I#20250054",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+      "Domain": "healthcare",
+      "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response."
+    },
+    "timestamp": "2025-12-10T10:40:09.081148",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "healthcare",
+        "Expected benefits": "Early detection of disease outbreaks\r\n\r\nFaster public health interventions\r\n\r\nReduced mortality and spread of infectious diseases\r\n\r\nData-driven allocation of medical resources",
+        "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response.",
+        "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating sensitive health data across multiple hospitals and labs\r\n\r\nEnsuring compliance with data protection laws (DPDP Act)\r\n\r\nHandling incomplete or noisy health record data\r\n\r\nMaintaining real-time performance during health emergencies"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250036",
+          "case_name": "NLP-enabled Real-time Consultation Transcription with \nVoice assistance , Integration with Digital Health Systems ",
+          "final_score": 0.44070169649203894
+        },
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.4210713687748165
+        },
+        {
+          "case_id": "I#20250035",
+          "case_name": "AI-powered Health Screening with Consent-based Data Sharing",
+          "final_score": 0.4114230739664539
+        },
+        {
+          "case_id": "I#20250054",
+          "case_name": "Predictive analytics for demand forecasting and policy impact assessment",
+          "final_score": 0.3951332243429858
+        },
+        {
+          "case_id": "I#20250030",
+          "case_name": "AI-Enabled Local Development Assistance Planner",
+          "final_score": 0.3780790045990197
+        }
+      ]
+    }
+  },
+  {
+    "feedback_id": "d243b1c9",
+    "user_id": "USER_6c89ce29",
+    "candidate_id": "I#20250030",
+    "relevance_score": 0.0,
+    "user_input": {
+      "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+      "Domain": "healthcare",
+      "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response."
+    },
+    "timestamp": "2025-12-10T10:40:18.406432",
+    "feedback_type": "explicit",
+    "session_id": "unknown",
+    "search_context": {
+      "user_query": {
+        "Domain": "healthcare",
+        "Expected benefits": "Early detection of disease outbreaks\r\n\r\nFaster public health interventions\r\n\r\nReduced mortality and spread of infectious diseases\r\n\r\nData-driven allocation of medical resources",
+        "Idea Description": "This project focuses on developing an AI-based early disease outbreak detection platform using real-time health records, hospital admission logs, environmental data, and population mobility patterns. The system identifies unusual spikes in symptoms, predicts potential outbreak zones, and alerts healthcare authorities.\r\n\r\nIt integrates data from hospitals, wearable devices, pathology labs, and public health surveillance systems. Machine learning models detect anomalies, while geospatial analytics create hotspot maps for rapid response.",
+        "Idea Name": "AI-Driven Public Health Outbreak Early Warning System",
+        "fundingSource": "govt",
+        "potentail Challenges": "Integrating sensitive health data across multiple hospitals and labs\r\n\r\nEnsuring compliance with data protection laws (DPDP Act)\r\n\r\nHandling incomplete or noisy health record data\r\n\r\nMaintaining real-time performance during health emergencies"
+      },
+      "similar_cases": [
+        {
+          "case_id": "I#20250036",
+          "case_name": "NLP-enabled Real-time Consultation Transcription with \nVoice assistance , Integration with Digital Health Systems ",
+          "final_score": 0.44070169649203894
+        },
+        {
+          "case_id": "I#20250026",
+          "case_name": "AI-driven environmental data analysis and predictive modeling using institutional \nsubmissions through the portal. ",
+          "final_score": 0.4210713687748165
+        },
+        {
+          "case_id": "I#20250035",
+          "case_name": "AI-powered Health Screening with Consent-based Data Sharing",
+          "final_score": 0.4114230739664539
+        },
+        {
+          "case_id": "I#20250054",
+          "case_name": "Predictive analytics for demand forecasting and policy impact assessment",
+          "final_score": 0.3951332243429858
+        },
+        {
+          "case_id": "I#20250030",
+          "case_name": "AI-Enabled Local Development Assistance Planner",
+          "final_score": 0.3780790045990197
+        }
+      ]
+    }
+  }
+]

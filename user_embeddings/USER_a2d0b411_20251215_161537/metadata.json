@@ -1,0 +1,8 @@
+{
+    "Idea Name": "AI-Driven Intelligent Traffic Congestion and Accident Prediction System",
+    "Domain": "public_services",
+    "fundingSource": "govt",
+    "Expected benefits": "Reduced traffic congestion.\r\nLower accident rates.\r\nImproved commuter experience.",
+    "Idea Description": "This system uses AI models to predict traffic congestion and accident-prone zones by analyzing traffic sensor data, GPS traces, road conditions, weather information, and historical accident records. It helps traffic authorities optimize signal timings and improve road safety.",
+    "potentail Challenges": "Real-time data ingestion at scale.\r\nIntegration of heterogeneous traffic data sources.\r\nMaintaining prediction accuracy during abnormal events."
+}

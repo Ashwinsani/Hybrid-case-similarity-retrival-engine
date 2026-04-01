@@ -1,0 +1,8 @@
+{
+    "Idea Name": "AI-Driven Smart Agriculture Forecasting System",
+    "Domain": "public_services",
+    "fundingSource": "govt",
+    "Expected benefits": "NA",
+    "Idea Description": "This project focuses on developing an AI-powered prediction system that analyzes environmental data, soil parameters, and market trends to forecast crop yields, pest risks, and weather impacts. The system integrates data from IoT sensors, satellite imagery, and historical yield records to help farmers and policymakers make data-driven agricultural decisions.",
+    "potentail Challenges": "Handling large, unstructured datasets from multiple sources. Ensuring forecast accuracy across different soil and climate conditions. Real-time data integration from IoT and satellite APIs."
+}

@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_87acd04e",
+    "timestamp": "20260223_121959",
+    "form_data": {
+        "Idea Name": "Intelligent Crop Production Prediction System",
+        "Domain": "agriculture",
+        "fundingSource": "govt",
+        "Expected benefits": "NA",
+        "Idea Description": "Design a machine learning–driven solution that estimates agricultural output across various regions by analyzing past farming records, climate trends, and remote sensing satellite data.",
+        "potential Challenges": "NA"
+    },
+    "similarity_text": "domain_agriculture agriculture environment design driven solution estimate agricultural output across various region analyzing past farming record climate trend remote sensing satellite data",
+    "processed_at": "2026-02-23T12:19:59.534744"
+}

@@ -1,0 +1,14 @@
+{
+    "user_id": "USER_c7094799",
+    "timestamp": "20251202_101113",
+    "form_data": {
+        "Idea Name": "AI Tax Fraud Detection",
+        "Domain": "tax_revenue",
+        "fundingSource": "govt",
+        "Expected benefits": "NA",
+        "Idea Description": "Using machine learning to identify fraudulent tax claims",
+        "potentail Challenges": "NA"
+    },
+    "similarity_text": "domain_tax_revenue ai_ml tax_revenue using identify fraudulent tax claim",
+    "processed_at": "2025-12-02T10:11:16.489134"
+}
